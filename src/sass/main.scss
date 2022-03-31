@@ -4,4 +4,19 @@
  */
 
 // Стили для файла с примером HTML-фрагмента
-@import './example';
+// БАЗОВЫЕ
+@import "./base/common";
+@import "./base/reset";
+
+// УТИЛИТЫ
+@import "./utils/vars";
+@import "./utils/hidden";
+@import "./utils/placeholder";
+@import "./utils/mixins";
+
+// КОМПОНЕНТЫ (модалки + контейнер)
+@import "./components/container";
+@import "./components/modal";
+
+// ЛАЯУТЫ (секции проэкта)
+
