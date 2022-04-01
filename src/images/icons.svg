@@ -35,5 +35,13 @@
 <path d="M30.537 32c-0.385-0.002-0.754-0.156-1.025-0.429l-29.086-29.087c-0.569-0.568-0.569-1.489 0-2.058s1.489-0.568 2.058 0l29.086 29.087c0.42 0.416 0.545 1.045 0.319 1.591s-0.761 0.9-1.352 0.896v0z"></path>
 </symbol>
 
+<symbol id="icon-arrow-right-white" viewBox="0 0 19 32">
+    <path fill="none" stroke="#fff" style="stroke: var(--color1, #fff)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="6.4" d="M3.2 3.2l11.553 12.8-11.553 12.8"></path>
+</symbol>
+
+<symbol id="icon-arrow-right-red" viewBox="0 0 22 32">
+    <path fill="none" stroke="#d41443" style="stroke: var(--color1, #d41443)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="6.4" d="M4.545 3.2l13.7 12.8-13.7 12.8"></path>
+</symbol>
+
 </defs>
 </svg>
