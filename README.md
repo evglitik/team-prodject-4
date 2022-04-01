@@ -1,3 +1,17 @@
+## SVG список иконок
+
+    icon-facebook,
+    icon-github,
+    icon-telegram,
+    icon-arrow-right-long ( -> ),
+    icon-arrow-right-short ( > ),
+    icon-burger (=),
+    icon-close (x),
+
+#
+
+#
+
 # Parcel boilerplate
 
 ## Скрытые файлы
