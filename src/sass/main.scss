@@ -17,7 +17,17 @@
 // КОМПОНЕНТЫ (модалки + контейнер)
 @import "./components/container";
 @import "./components/modal";
+@import "./components/mobile-menu";
 
 // ЛАЯУТЫ (секции проэкта)
-@import "./layout/about"
+@import "./layout/about";
+@import "./layout/advantages";
+@import "./layout/contacts";
+@import "./layout/customer-reviews";
+@import "./layout/footer";
+@import "./layout/gallery";
+@import "./layout/header";
+@import "./layout/hero";
+@import "./layout/products";
+
 
