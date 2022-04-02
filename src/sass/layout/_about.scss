@@ -1,0 +1,103 @@
+.about {
+    background-color: $advantages-background;
+    
+    padding-bottom: 60px;
+}
+
+.about-pre__title {
+    font-family: 'Titan One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 1.13;
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    display: block;
+    color: $text-pre-title;
+    margin-bottom: 16px;
+}
+
+.about__title {
+    font-family: 'Titan One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 58px;
+    line-height: 1.13;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    margin-bottom: 60px;
+    color:  $header-menu-text-hover;
+}
+
+.about-pre__text {
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 176%;
+    letter-spacing: 0.04em;
+    color: #000000;
+    margin-bottom: 32px;
+}
+
+
+.about__text {
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 194%;
+    letter-spacing: 0.04em;
+
+    color: #907E82;
+    margin-bottom: 40px;
+}
+
+.about-last__text {
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 194%;
+    letter-spacing: 0.04em;
+    color: #907E82;
+    margin-bottom: 40px;
+}
+
+.about-main__text {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    width: 463px;
+}
+
+
+
+
+.about-main {
+    display: flex;
+    
+    justify-content: space-between;
+    align-items: center;
+    background-image: linear-gradient(rgba(255, 245, 246, 10%),rgba(255, 245, 246, 10%)), url();
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.about-btn {
+    font-weight: 700;
+    line-height: 21px;
+    color: $header-btn-text;
+    background: $header-menu-text;
+    border-radius: 22px;
+    min-width: 176px;
+    height: 44px;
+    border: transparent;
+    cursor: pointer;
+        &:hover,
+        &:focus {
+            background-color: $header-hover-btn;
+        }
+}
