@@ -44,6 +44,8 @@
     &__pic {
         width: 40px;
         height: 40px;
+        transition: width 250ms linear, transform 500ms ease-in-out, height 250ms linear, transform 500ms ease-in-out;
+        //transition: height 500ms linear, transform 500ms ease-in-out;
         @media screen and (min-width: 768px) {
             width: 81px;
             height: 81px;
@@ -51,10 +53,13 @@
         @media screen and (min-width: 1280px) {
             width: 140px;
             height: 140px;
+
         }
-        &:hover{
+        &:hover, &:focus {
+
             width: 122px;
             height: 122px;
+
             @media screen and (min-width: 768px) {
                 width: 264px;
                 height: 264px;

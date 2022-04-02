@@ -155,6 +155,10 @@ img {
 .gallery__pic {
   width: 40px;
   height: 40px;
+  -webkit-transition: width 250ms linear, height 250ms linear, -webkit-transform 500ms ease-in-out, -webkit-transform 500ms ease-in-out;
+  transition: width 250ms linear, height 250ms linear, -webkit-transform 500ms ease-in-out, -webkit-transform 500ms ease-in-out;
+  transition: width 250ms linear, transform 500ms ease-in-out, height 250ms linear, transform 500ms ease-in-out;
+  transition: width 250ms linear, transform 500ms ease-in-out, height 250ms linear, transform 500ms ease-in-out, -webkit-transform 500ms ease-in-out, -webkit-transform 500ms ease-in-out;
 }
 
 @media screen and (min-width: 768px) {
@@ -171,20 +175,20 @@ img {
   }
 }
 
-.gallery__pic:hover {
+.gallery__pic:hover, .gallery__pic:focus {
   width: 122px;
   height: 122px;
 }
 
 @media screen and (min-width: 768px) {
-  .gallery__pic:hover {
+  .gallery__pic:hover, .gallery__pic:focus {
     width: 264px;
     height: 264px;
   }
 }
 
 @media screen and (min-width: 1280px) {
-  .gallery__pic:hover {
+  .gallery__pic:hover, .gallery__pic:focus {
     width: 415px;
     height: 415px;
   }
