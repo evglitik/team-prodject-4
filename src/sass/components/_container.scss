@@ -5,13 +5,9 @@
 
     margin: 0px auto;
 
-    // @include mobile {
-    //     width: 310px;
-    // }
-
     @media screen and (min-width:310px) {
-        width: 310px;
-}
+        width: 320px;
+    }
 
     @include tablet {
         width: 734px;

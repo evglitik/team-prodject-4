@@ -1,0 +1,99 @@
+.customer-reviews {
+    padding-top: 80px; //УДАЛИТЬ
+    padding-bottom: 48px;
+}
+
+.costumer-card__client-emily--photo-position, 
+.costumer-card__client-luisa--photo-position, 
+.costumer-card__client-linda--photo-position {
+    margin: 0 auto;
+    width: 85px;
+    margin-bottom: 75px;
+}
+
+.costumer-card__tumb-text { // может давать проскролл на мобиле
+    width: 280px;
+    margin: 0 auto 33px;
+    background-color: #FAFAFA;
+    position: relative;
+        &::before {
+            position: absolute;
+            top: 30px;
+            left: 53px;
+            content: " ";
+            background: url(../images/slaider-lapky.png);
+            width: 54px;
+            height: 40px;
+        }
+}
+
+.costumer-card__tex {
+    position: relative;
+    // width: 157px;
+    padding-top: 43px;
+    padding-bottom: 26px;
+    // margin: 0 auto;
+    padding-left: 65px;
+    padding-right: 58px;
+}
+
+.costumer-card__tex {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 2.58;
+    text-align: center;
+    color: $text-darck;
+}
+
+.costumer-card__name {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.86;
+    text-align: center;
+    margin-bottom: 48px;
+}
+
+.slaider {
+        .slaider-dots{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+        .slaider-dots li {
+    list-style: none;
+    margin: 0 9px;
+    }
+    .slaider-dots button {
+        cursor: pointer;
+        font-size: 0;
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        background-color: $slaider-dots-active;
+    
+        border: none;
+        padding: 0;
+    }
+    .slaider-dots li.slick-active button {
+        background-color: $slaider-dots-un-active;
+    }
+}
+
+#slick-slide-control00 {
+    position: relative;
+    background-color: transparent;
+    &::after {
+        position: absolute;
+        top: 0;
+        left: 0;
+        border-radius: 0%;
+        content: "";
+        width: 12px;
+        height: 12px;
+        background: url(../images/slaider-home-un-acktive.png);
+    }
+}
+
+.slaider .slaider-dots li.slick-active #slick-slide-control00::after {
+    background: url(../images/slaider-home-acktive.png);
+}
