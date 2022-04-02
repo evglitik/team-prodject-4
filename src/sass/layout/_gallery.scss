@@ -1,7 +1,12 @@
 .gallery {
     &__box{
         display: flex;
-        
+        background-image: linear-gradient(
+    to bottom,
+    #fff5f6 40%,
+    #ffffff 40%
+    
+  );
     }
     
     &__prew {
@@ -55,8 +60,8 @@
                 height: 264px;
             }
             @media screen and (min-width: 1280px) {
-                width: 430px;
-                height: 430px;
+                width: 415px;
+                height: 415px;
             }
         }
     }    
@@ -92,8 +97,8 @@
             height: 264px;
         }
         @media screen and (min-width: 1280px) {
-            width: 430px;
-            height: 430px;
+            width: 415px;
+            height: 415px;
         }
     }
 }

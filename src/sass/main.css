@@ -96,6 +96,8 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(40%, #fff5f6), color-stop(40%, #ffffff));
+  background-image: linear-gradient(to bottom, #fff5f6 40%, #ffffff 40%);
 }
 
 .gallery__prew {
@@ -183,8 +185,8 @@ img {
 
 @media screen and (min-width: 1280px) {
   .gallery__pic:hover {
-    width: 430px;
-    height: 430px;
+    width: 415px;
+    height: 415px;
   }
 }
 
@@ -238,8 +240,8 @@ img {
 
 @media screen and (min-width: 1280px) {
   .pic:hover {
-    width: 430px;
-    height: 430px;
+    width: 415px;
+    height: 415px;
   }
 }
 /*# sourceMappingURL=main.css.map */
