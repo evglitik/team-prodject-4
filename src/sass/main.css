@@ -92,7 +92,35 @@ img {
   }
 }
 
-.ggg {
+.gallery__box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.gallery__prew {
+  margin: 2px 2px;
+  border-radius: 4px;
+  overflow: hidden;
+  width: auto;
+  height: auto;
+}
+
+@media screen and (min-width: 768px) {
+  .gallery__prew {
+    margin: 4px 4px;
+    border-radius: 8px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .gallery__prew {
+    margin: 6px 6px;
+    border-radius: 10px;
+  }
+}
+
+.gallery__items {
   width: 100vw;
   max-height: 122px;
   display: -webkit-box;
@@ -109,49 +137,60 @@ img {
 }
 
 @media screen and (min-width: 768px) {
-  .ggg {
+  .gallery__items {
     width: 768px;
     max-height: 264px;
   }
 }
 
 @media screen and (min-width: 1280px) {
-  .ggg {
+  .gallery__items {
     width: 1280px;
     max-height: 430px;
   }
 }
 
-.gallery__box {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.gallery__box--prew {
-  margin: 2px 2px;
-  border-radius: 4px;
-  overflow: hidden;
-  width: auto;
-  height: auto;
+.gallery__pic {
+  width: 40px;
+  height: 40px;
 }
 
 @media screen and (min-width: 768px) {
-  .gallery__box--prew {
-    margin: 4px 4px;
-    border-radius: 8px;
+  .gallery__pic {
+    width: 81px;
+    height: 81px;
   }
 }
 
 @media screen and (min-width: 1280px) {
-  .gallery__box--prew {
-    margin: 6px 6px;
-    border-radius: 10px;
+  .gallery__pic {
+    width: 140px;
+    height: 140px;
+  }
+}
+
+.gallery__pic:hover {
+  width: 122px;
+  height: 122px;
+}
+
+@media screen and (min-width: 768px) {
+  .gallery__pic:hover {
+    width: 264px;
+    height: 264px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .gallery__pic:hover {
+    width: 430px;
+    height: 430px;
   }
 }
 
 .zerro {
   margin: 0;
+  padding: 5px 0;
 }
 
 @media screen and (min-width: 768px) {
@@ -166,39 +205,39 @@ img {
   }
 }
 
-.gallery__box--prew-pic {
-  width: 40px;
-  height: 40px;
+.pic {
+  width: 70px;
+  height: 70px;
 }
 
 @media screen and (min-width: 768px) {
-  .gallery__box--prew-pic {
-    width: 81px;
-    height: 81px;
+  .pic {
+    width: 151px;
+    height: 151px;
   }
 }
 
 @media screen and (min-width: 1280px) {
-  .gallery__box--prew-pic {
-    width: 140px;
-    height: 140px;
+  .pic {
+    width: 260px;
+    height: 260px;
   }
 }
 
-.gallery__box--prew-pic:hover {
+.pic:hover {
   width: 122px;
   height: 122px;
 }
 
 @media screen and (min-width: 768px) {
-  .gallery__box--prew-pic:hover {
+  .pic:hover {
     width: 264px;
     height: 264px;
   }
 }
 
 @media screen and (min-width: 1280px) {
-  .gallery__box--prew-pic:hover {
+  .pic:hover {
     width: 430px;
     height: 430px;
   }
