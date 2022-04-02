@@ -1,0 +1,27 @@
+{
+    "version": 3,
+    "mappings": ";AAAA;;;GAGG;ACHF,AAAA,IAAI,CAAC;EACF,WAAW,EAAE,qBAAqB;CACpC;;AAEF,AAAA,KAAK,CAAC;EACF,eAAe,EAAE,IAAI;CACxB;;AAED,AAAA,KAAK,CAAC;EACF,UAAU,EAAE,IAAI;CACnB;;ACVD,AAAA,EAAE;AACF,EAAE;AACF,EAAE;AACF,EAAE;AACF,EAAE;AACF,EAAE;AACF,CAAC,CAAC;EACE,MAAM,EAAE,CAAC;CACZ;;AAED,AAAA,EAAE,CAAC;EACC,MAAM,EAAE,CAAC;EACT,OAAO,EAAE,CAAC;CACb;;AAED,AAAA,GAAG,CAAC;EACA,OAAO,EAAE,KAAK;CACjB;;ACjBD,AAAA,KAAK,CAAC;EACF,aAAa,CAAA,QAAC;EAEd,kBAAkB,CAAA,QAAC;EACnB,wBAAwB,CAAA,QAAC;EACzB,iBAAiB,CAAA,QAAC;EAClB,kBAAkB,CAAA,QAAC;EAEnB,YAAY,CAAA,QAAC;EACb,YAAY,CAAA,QAAC;EACb,gBAAgB,CAAA,QAAC;EAEjB,iBAAiB,CAAA,QAAC;EAClB,uBAAuB,CAAA,QAAC;EAExB,8BAA8B,CAAA,QAAC;EAC/B,8BAA8B,CAAA,QAAC;EAC/B,gCAAgC,CAAA,QAAC;EAEjC,kBAAkB,CAAA,QAAC;EACnB,uBAAuB,CAAA,QAAC;EAExB,qBAAqB,CAAA,QAAC;CACzB;;ACvBD,AAAA,YAAY,CAAC;EACT,QAAQ,EAAE,QAAQ;EAClB,WAAW,EAAE,MAAM;EACnB,KAAK,EAAE,GAAG;EACV,MAAM,EAAE,GAAG;EACX,QAAQ,EAAE,MAAM;EAChB,MAAM,EAAE,CAAC;EACT,OAAO,EAAE,CAAC;EACV,IAAI,EAAE,aAAa;EACnB,SAAS,EAAE,UAAU;EACrB,MAAM,EAAE,IAAI;CACf;;AGXD,AAAA,UAAU,CAAC;EACP,KAAK,EAAE,IAAI;EACX,YAAY,EAAE,IAAI;EAClB,aAAa,EAAE,IAAI;EAEnB,MAAM,EAAE,QAAQ;CAanB;;ADjBG,MAAM,CAAC,MAAM,MAAM,SAAS,EAAE,KAAK;ECDvC,AAAA,UAAU,CAAC;IAQH,KAAK,EAAE,KAAK;GAUnB;;;ADXG,MAAM,CAAC,MAAM,MAAM,SAAS,EAAE,KAAK;ECPvC,AAAA,UAAU,CAAC;IAYH,KAAK,EAAE,KAAK;GAMnB;;;ADLG,MAAM,CAAC,MAAM,MAAM,SAAS,EAAE,MAAM;ECbxC,AAAA,UAAU,CAAC;IAgBH,KAAK,EAAE,MAAM;GAEpB",
+    "sources": [
+        "main.scss",
+        "base/_common.scss",
+        "base/_reset.scss",
+        "utils/_vars.scss",
+        "utils/_hidden.scss",
+        "utils/_placeholder.scss",
+        "utils/_mixins.scss",
+        "components/_container.scss",
+        "components/_modal.scss",
+        "components/_mobile-menu.scss",
+        "layout/_about.scss",
+        "layout/_advantages.scss",
+        "layout/_contacts.scss",
+        "layout/_customer-reviews.scss",
+        "layout/_footer.scss",
+        "layout/_gallery.scss",
+        "layout/_header.scss",
+        "layout/_hero.scss",
+        "layout/_products.scss"
+    ],
+    "names": [],
+    "file": "main.css"
+}
