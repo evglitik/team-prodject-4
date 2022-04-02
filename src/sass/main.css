@@ -155,10 +155,8 @@ img {
 .gallery__pic {
   width: 40px;
   height: 40px;
-  -webkit-transition: width 250ms linear, height 250ms linear, -webkit-transform 500ms ease-in-out, -webkit-transform 500ms ease-in-out;
-  transition: width 250ms linear, height 250ms linear, -webkit-transform 500ms ease-in-out, -webkit-transform 500ms ease-in-out;
-  transition: width 250ms linear, transform 500ms ease-in-out, height 250ms linear, transform 500ms ease-in-out;
-  transition: width 250ms linear, transform 500ms ease-in-out, height 250ms linear, transform 500ms ease-in-out, -webkit-transform 500ms ease-in-out, -webkit-transform 500ms ease-in-out;
+  -webkit-transition: width 100ms linear,  height 100ms linear;
+  transition: width 100ms linear,  height 100ms linear;
 }
 
 @media screen and (min-width: 768px) {
@@ -227,25 +225,6 @@ img {
   .pic {
     width: 260px;
     height: 260px;
-  }
-}
-
-.pic:hover {
-  width: 122px;
-  height: 122px;
-}
-
-@media screen and (min-width: 768px) {
-  .pic:hover {
-    width: 264px;
-    height: 264px;
-  }
-}
-
-@media screen and (min-width: 1280px) {
-  .pic:hover {
-    width: 415px;
-    height: 415px;
   }
 }
 /*# sourceMappingURL=main.css.map */
