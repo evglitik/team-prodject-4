@@ -94,16 +94,16 @@
         width: 260px;
         height: 260px;
     }
-    &:hover{
-        width: 122px;
-        height: 122px;
-        @media screen and (min-width: 768px) {
-            width: 264px;
-            height: 264px;
-        }
-        @media screen and (min-width: 1280px) {
-            width: 415px;
-            height: 415px;
-        }
-    }
+    // &:hover{
+    //     width: 122px;
+    //     height: 122px;
+    //     @media screen and (min-width: 768px) {
+    //         width: 264px;
+    //         height: 264px;
+    //     }
+    //     @media screen and (min-width: 1280px) {
+    //         width: 415px;
+    //         height: 415px;
+    //     }
+    // }
 }
