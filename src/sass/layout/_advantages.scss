@@ -1,0 +1,102 @@
+.section-advantages {
+    padding-top: 40px;
+    padding-bottom: 80px;
+    background-color: var(--advantages-background);
+    @include tablet {
+        padding-top: 80px;
+    }
+    @include desktop {
+        padding-top: 21px;
+        padding-bottom: 120px;
+    }
+}
+.advantages-list {
+    @include tablet {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+.advantages-item {
+    width: 230px;
+    margin-bottom: 35px;
+    @include tablet {
+        width: 180px;
+        &:first-child {
+            margin-right: 4px;
+        }
+        &:nth-child(2) {
+            margin-right: 22px;
+        }
+    }
+    @include desktop {
+        width: 288px;
+        &:first-child {
+            margin-right: 142px;
+        }
+        &:nth-child(2) {
+            margin-right: 106px;
+        }
+    }
+}
+.advantages-number {
+    font-family: 'Titan One';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: calc(41 / 36);
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--text-acent);
+    display: block;
+    margin-bottom: 20px;
+    @include tablet {
+        font-size: 48px;
+        line-height: calc(55 / 48);
+        margin-bottom: 22px;
+    }
+    @include desktop {
+        font-size: 58px;
+        line-height: calc(66 / 58);
+        margin-bottom: 25px;
+    }
+    &::before {
+        content: '';
+        display: block;
+        height: 50px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        margin-bottom: 16px;
+        @include tablet {
+            margin-bottom: 36px;
+        }
+        @include desktop {
+            margin-bottom: 40px;
+        }
+    }
+    &__milk::before {
+        width: 33px;
+        background-image: url(../images/icon-milk.png);
+    }
+    &__apple::before {
+        width: 50px;
+        background-image: url(../images/icon-apple.png);
+    }
+    &__heart::before {
+        width: 44px;
+        background-image: url(../images/icon-heart.png);
+    }
+}
+.advantages-text {
+    font-weight: 700;
+    font-size: 12px;
+    line-height: calc(20 / 12);
+    color: #000000;
+    @include tablet {
+        font-size: 14px;
+        line-height: calc(24 / 14);
+    }
+    @include desktop {
+        font-size: 16px;
+        line-height: calc(28 / 16);
+    }
+}
