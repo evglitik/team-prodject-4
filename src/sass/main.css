@@ -1,0 +1,251 @@
+@charset "UTF-8";
+/*
+ * Главный файл стилей.
+ * Все паршалы подключаются сюда.
+ */
+body {
+  font-family: 'DM Sans', sans-serif;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.list {
+  list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+}
+
+:root {
+  --acent-color: #D41443;
+  --header-menu-text: #FFFFFF;
+  --header-menu-text-hover: #D41443;
+  --header-btn-text: #D41443;
+  --header-hover-btn: #ECEBEB;
+  --text-light: #FFFFFF;
+  --text-acent: #D41443;
+  --text-pre-title: #FFA5BA;
+  --hero-background: #FFB8CA;
+  --hero-background-elips: #FFA5BA;
+  --products-icecream-background: #FFB8CA;
+  --products-icecoffe-background: #F0D1A5;
+  --products-milkshakes-background: #C2E297;
+  --about-background: #FFF5F6;
+  --advantages-background: #FFF5F6;
+  --contacts-background: #FFF5F6;
+}
+
+.fulse-title {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  -webkit-clip-path: inset(50%);
+          clip-path: inset(50%);
+  margin: -1px;
+}
+
+.container {
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0px auto;
+}
+
+@media screen and (min-width: 480px) {
+  .container {
+    width: 310px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 734px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .container {
+    width: 1279px;
+  }
+}
+
+.gallery__box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(40%, #fff5f6), color-stop(40%, #ffffff));
+  background-image: linear-gradient(to bottom, #fff5f6 40%, #ffffff 40%);
+}
+
+.gallery__prew {
+  margin: 2px 2px;
+  border-radius: 4px;
+  overflow: hidden;
+  width: auto;
+  height: auto;
+}
+
+@media screen and (min-width: 768px) {
+  .gallery__prew {
+    margin: 4px 4px;
+    border-radius: 8px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .gallery__prew {
+    margin: 6px 6px;
+    border-radius: 10px;
+  }
+}
+
+.gallery__items {
+  width: 100vw;
+  max-height: 122px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+@media screen and (min-width: 768px) {
+  .gallery__items {
+    width: 768px;
+    max-height: 264px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .gallery__items {
+    width: 1280px;
+    max-height: 430px;
+  }
+}
+
+.gallery__pic {
+  width: 40px;
+  height: 40px;
+  -webkit-transition: width 250ms linear, height 250ms linear, -webkit-transform 500ms ease-in-out, -webkit-transform 500ms ease-in-out;
+  transition: width 250ms linear, height 250ms linear, -webkit-transform 500ms ease-in-out, -webkit-transform 500ms ease-in-out;
+  transition: width 250ms linear, transform 500ms ease-in-out, height 250ms linear, transform 500ms ease-in-out;
+  transition: width 250ms linear, transform 500ms ease-in-out, height 250ms linear, transform 500ms ease-in-out, -webkit-transform 500ms ease-in-out, -webkit-transform 500ms ease-in-out;
+}
+
+@media screen and (min-width: 768px) {
+  .gallery__pic {
+    width: 81px;
+    height: 81px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .gallery__pic {
+    width: 140px;
+    height: 140px;
+  }
+}
+
+.gallery__pic:hover, .gallery__pic:focus {
+  width: 122px;
+  height: 122px;
+}
+
+@media screen and (min-width: 768px) {
+  .gallery__pic:hover, .gallery__pic:focus {
+    width: 264px;
+    height: 264px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .gallery__pic:hover, .gallery__pic:focus {
+    width: 415px;
+    height: 415px;
+  }
+}
+
+.zerro {
+  margin: 0;
+  padding: 5px 0;
+}
+
+@media screen and (min-width: 768px) {
+  .zerro {
+    padding: 30px 0;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .zerro {
+    padding: 50px 0;
+  }
+}
+
+.pic {
+  width: 70px;
+  height: 70px;
+}
+
+@media screen and (min-width: 768px) {
+  .pic {
+    width: 151px;
+    height: 151px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .pic {
+    width: 260px;
+    height: 260px;
+  }
+}
+
+.pic:hover {
+  width: 122px;
+  height: 122px;
+}
+
+@media screen and (min-width: 768px) {
+  .pic:hover {
+    width: 264px;
+    height: 264px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .pic:hover {
+    width: 415px;
+    height: 415px;
+  }
+}
+/*# sourceMappingURL=main.css.map */
