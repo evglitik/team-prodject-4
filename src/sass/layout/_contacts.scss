@@ -5,28 +5,37 @@
         #FFF5F6 25%,
         #FFF5F6 75%,
         );
+        padding: 40px 0;
 }
 
 .contacts-list {
     @include tablet {
         display: flex;
+        justify-content: center;
     }
 }
 
 .contacts-list__item {
     padding: 40px 32px;
-    &:not(:last-child) {
-        margin-bottom: 20px;
-    }
     background-color: #fff;
     box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
     border-radius: 24px;
 
+    &:not(:last-child) {
+        margin-bottom: 20px;
+    }
+
     @include tablet {
+        width: 225px;
 
         &:not(:last-child) {
-            margin: 0 30px 0 0;
+            margin: 0 25px 0 0;
         }
+    }
+
+    @include desktop {
+        width: 395px;
+        padding: 40px;
     }
 }
 
@@ -44,17 +53,27 @@
     text-transform: uppercase;
     height: 16px;
 
+    @include tablet {
+        font-size: 16px;
+        line-height: calc(30/16);
+        margin-bottom: 30px;
+    }
+
     &.cafe {
         width: 80px;
         background-color: #F0D1A5;
+        @include tablet {
+            width: 75px;
+            height: 30px;
+        }
     }
     &.foodtrack {
         width: 130px;
         background-color: #C2E297;
-    }
-
-    @include tablet {
-        margin-bottom: 30px;
+        @include tablet {
+            width: 140px;
+            height: 30px;
+        }
     }
 }
 
@@ -65,6 +84,16 @@
     font-size: 12px;
     line-height: calc(22/12);
     letter-spacing: 0.04em;
+
+    @include tablet {
+        font-size: 14px;
+        line-height: calc(26/14);
+    }
+
+    @include desktop {
+        font-size: 16px;
+        line-height: calc(30/16);
+    }
 }
 
 .cotacts-list__description {
@@ -74,6 +103,19 @@
     font-size: 12px;
     line-height: calc(18/12);
     color: #907E82;
+
+    @include tablet {
+        font-size: 14px;
+        line-height: calc(23/14);
+        margin-bottom: 60px;
+    }
+
+    @include desktop {
+        font-size: 16px;
+        line-height: calc(30/16);
+        letter-spacing: 0.04em;
+    }
+
     &::after {
         content: '';
         position: absolute;
@@ -88,23 +130,33 @@
             bottom: -30px;
         }
     }
-
-    @include tablet {
-        margin-bottom: 60px;
-    }
 }
 
 .contacts-list__wrap {
     margin-bottom: 10px;
+
+    @include desktop {
+        margin-bottom: 15px;
+    }
+
 }
 
 .contacts-list__days-open {
     display: block;
-
     font-weight: 500;
     font-size: 12px;
     line-height: calc(22/12);
-   
+
+    @include tablet {
+        font-size: 14px;
+        line-height: calc(26/14);
+    }
+
+    @include desktop {
+        font-size: 16px;
+        line-height: calc(30/16);
+        letter-spacing: 0.04em;
+    }
 }
 
 .contacts-list__time {
@@ -112,6 +164,16 @@
     font-size: 12px;
     line-height: calc(22/12);
     color: #FFA5BA;
+
+    @include tablet {
+        font-size: 14px;
+        line-height: calc(26/14);
+    }
+
+    @include desktop {
+        font-size: 16px;
+        line-height: calc(30/16);
+    }
 }
 
 .contacts-list__adress {
@@ -122,7 +184,20 @@
     font-size: 12px;
     line-height: calc(18/12);
     color: #907E82;
-    
+
+    @include tablet {
+        margin-top: 60px;
+        font-size: 14px;
+        line-height: calc(26/14);
+    }
+
+    @include desktop {
+        display: flex;
+        flex-direction: column;
+        font-size: 16px;
+        line-height: calc(30/16);
+    }
+
     &::before {
         content: '';
         position: absolute;
@@ -136,11 +211,14 @@
             top: -30px;
         }
     }
+}
 
+.contacts-button-wrap {
     @include tablet {
-        margin-top: 60px;
+        display: flex;
+        justify-content: center;
+        margin-top: 40px;
     }
-    
 }
 
 .contacts-button {
@@ -154,10 +232,20 @@
     border: none;
     background: #D41342;
     border-radius: 22px;
+    cursor: pointer;
     font-weight: 700;
     font-size: 16px;
-    line-height: 21px;
+    line-height: calc(21/16);
     color: #fff;
+
+    @include tablet {
+        justify-content: center;
+        width: 190px;
+        margin: 0 15px 0 0;
+        &>svg {
+            margin-left: 15px;
+        }
+    }
 }
 
 .contacts-button--color {
@@ -165,6 +253,18 @@
     color: #D41443;
     justify-content: center;
     margin-top: 10px;
+
+    @include tablet {
+        width: 175px;
+        margin: 0;
+    }
+
+    @include desktop {
+        &:hover {
+            background: #ECEBEB;
+        }
+    }
+
     &>svg {
         margin-left: 15px;
     }
