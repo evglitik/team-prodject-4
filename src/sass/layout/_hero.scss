@@ -1,0 +1,134 @@
+.hero{
+    //width: 320px;
+    //height: 502px;
+    background-color:$hero-background ;
+    //background-image: linear-gradient();
+    &__section{
+        position: relative;
+        padding: 194px 20px 158px;
+        width: 300px;
+        height: 502px;
+        //overflow: hidden;
+        @include tablet {
+            width: 768px;
+            height: 416px;
+        }
+        @include desktop {
+            width: 1280px;
+            height: 664px;
+        }
+    }
+
+    &__text {
+        position: absolute;
+        z-index: 2;
+        text-transform: uppercase;
+        font-family: 'Titan One';
+        font-style: normal;
+        font-weight: 400;
+        left: 5px;
+    }
+    &__text-up{
+        font-size: 26px;
+        line-height: 30px;
+        color: #ffffff;
+    }
+    &__title {
+        font-size: 48px;
+        line-height: 96.5%;
+        color: #D41443;
+        margin-bottom: 20px;
+        
+    }
+    &__buttons {
+        display: flex;
+    }
+    &__button {
+        font-family: 'DM Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 8px;
+        line-height: 10px; 
+        padding: 8px 15px;
+        border: none;
+        border-radius: 14px;
+        background-color: $acent-color;
+        color: #ffffff;
+    }
+    &__circle{
+        width: 346px;
+        height: 346px;
+        border-radius: 50%;
+        border: none;
+        background-color: $hero-background-elips;
+        position: absolute;
+        top: 83px;
+        left: 21px;
+        z-index: 0;
+        @include tablet {
+            width: 335px;
+            height: 335px;
+            top: 43px;
+            left: 248px;
+        }
+        @include desktop {
+            width: 534px;
+            height: 534px;
+            top: 54px;
+            left: 517px;
+        }
+    }
+    // &__pic{
+    //     position: absolute;
+    //     z-index: 1;
+    //     top: 92px;
+    //     left: 102px;
+    //     @include tablet {
+    //         width: 143px;
+    //         height: 336px;
+    //         top: 80px;
+    //         left: 322px;
+    //     }
+    // }
+    &__pic-bg{
+        position: absolute;
+        z-index: 1;
+        width: 171px;
+        height: 410px;
+        top: 92px;
+        left: 102px;
+        background-image: url(/images/hero/mob/pic@1.png);
+        background-size: cover;
+        @include tablet {
+            width: 143px;
+            height: 336px;
+            top: 80px;
+            left: 322px;
+        }
+        @include desktop {
+            width: 236px;
+            height: 557px;
+            top: 108px;
+            left: 636px;
+        }
+    }
+
+}
+.btn2 {
+    background-color: #ffffff;
+    color: $acent-color;
+    margin-left: 8px;
+    &:hover{
+        background-color: #ecebeb;
+        font-weight: 500;
+    }
+}
+.btn3 {
+    background-color: $acent-color;
+    color: #ffffff;
+    margin-left: 8px;
+    &:hover{
+        background-color: #c7133e;
+        font-weight: 500;
+    }
+}
