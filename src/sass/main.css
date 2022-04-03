@@ -34,6 +34,25 @@ img {
   display: block;
 }
 
+:root {
+  --acent-color: #D41443;
+  --header-menu-text: #FFFFFF;
+  --header-menu-text-hover: #D41443;
+  --header-btn-text: #D41443;
+  --header-hover-btn: #ECEBEB;
+  --text-light: #FFFFFF;
+  --text-acent: #D41443;
+  --text-pre-title: #FFA5BA;
+  --hero-background: #FFB8CA;
+  --hero-background-elips: #FFA5BA;
+  --products-icecream-background: #FFB8CA;
+  --products-icecoffe-background: #F0D1A5;
+  --products-milkshakes-background: #C2E297;
+  --about-background: #FFF5F6;
+  --advantages-background: #FFF5F6;
+  --contacts-background: #FFF5F6;
+}
+
 .fulse-title {
   position: absolute;
   white-space: nowrap;
@@ -55,7 +74,7 @@ img {
   margin: 0px auto;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 310px) {
   .container {
     width: 310px;
   }
@@ -74,6 +93,17 @@ img {
 }
 
 .footer {
-  border-color: #FFF5F6;
+  background-color: var(--advantages-background);
+}
+
+.footer_title-one {
+  width: 232px;
+  font-family: 'Titan One';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.16;
+  text-transform: uppercase;
+  color: #FFA5BA;
 }
 /*# sourceMappingURL=main.css.map */
