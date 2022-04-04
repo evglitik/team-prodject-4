@@ -1,14 +1,7 @@
 .advantages {
-    padding-top: 40px;
     padding-bottom: 80px;
     background-color: $advantages-background;
-
-    @include tablet {
-        padding-top: 80px;
-    }
-
     @include desktop {
-        padding-top: 21px;
         padding-bottom: 120px;
     }
 }
@@ -22,27 +15,25 @@
 
 .advantages__item {
     width: 230px;
-    margin-bottom: 35px;
-
+    @media screen and (max-width: 767px) {
+        &:not(:last-child) {
+            margin-bottom: 32px;
+        }
+    }
     @include tablet {
         width: 180px;
-
         &:first-child {
             margin-right: 4px;
         }
-
         &:nth-child(2) {
             margin-right: 22px;
         }
     }
-
     @include desktop {
         width: 288px;
-
         &:first-child {
             margin-right: 142px;
         }
-
         &:nth-child(2) {
             margin-right: 106px;
         }
@@ -60,19 +51,16 @@
     color: $text-acent;
     display: block;
     margin-bottom: 20px;
-
     @include tablet {
         font-size: 48px;
         line-height: calc(55 / 48);
         margin-bottom: 22px;
     }
-
     @include desktop {
         font-size: 58px;
         line-height: calc(66 / 58);
         margin-bottom: 25px;
     }
-
     &::before {
         content: '';
         display: block;
@@ -80,26 +68,21 @@
         background-size: contain;
         background-repeat: no-repeat;
         margin-bottom: 16px;
-
         @include tablet {
             margin-bottom: 36px;
         }
-
         @include desktop {
             margin-bottom: 40px;
         }
     }
-
     &--milk::before {
         width: 33px;
         background-image: url(../images/icon-milk.png);
     }
-
     &--apple::before {
         width: 50px;
         background-image: url(../images/icon-apple.png);
     }
-
     &--heart::before {
         width: 44px;
         background-image: url(../images/icon-heart.png);
@@ -111,12 +94,10 @@
     font-size: 12px;
     line-height: calc(20 / 12);
     color: #000000;
-
     @include tablet {
         font-size: 14px;
         line-height: calc(24 / 14);
     }
-
     @include desktop {
         font-size: 16px;
         line-height: calc(28 / 16);
