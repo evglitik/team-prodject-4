@@ -1,0 +1,208 @@
+.about {
+    background-color: $advantages-background;
+}
+
+.about__container {
+    background-image: linear-gradient(rgba(255, 245, 246, 10%),rgba(255, 245, 246, 10%)), url(/images/bg-milk.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position-y: 595px;
+
+    width: 100%;
+
+    @include tablet{
+        background-image: none;
+    }
+    @include desktop {
+        background-image: linear-gradient(rgba(255, 245, 246, 10%),rgba(255, 245, 246, 10%)), url(/images/bg-milk.png);
+        background-repeat: no-repeat;
+        background-size: initial;
+        background-position: bottom;
+    }
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    @include tablet {
+        max-width: 336px;
+    }
+    @include desktop {
+        max-width: 501px;
+    }
+}
+
+.about__pre-title {
+    font-family: 'Titan One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.16;
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    display: block;
+    color: $text-pre-title;
+    padding-top: 40px;
+    margin-bottom: 15px;
+    @include tablet {
+        font-size: 26px;
+        line-height: 1.15;
+    }
+    @include desktop {
+        font-size: 30px ;
+        line-height: 1.13;
+        padding-top: 60px;
+        margin-bottom: 16px;
+    }
+}
+
+.about__title {
+    font-family: 'Titan One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 34px;
+    line-height: 1.14;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    margin-bottom: 32px;
+    color:  $header-menu-text-hover;
+    @include tablet{
+        font-size: 48px;
+        line-height: 1.14;
+        margin-bottom: 40px;
+    }
+    @include desktop{
+        font-size: 58px;
+        line-height: 1.13;
+        margin-bottom: 60px;
+    }
+ 
+
+}
+
+.about__pre-text {
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 162%;;
+    letter-spacing: 0.04em;
+    color: #000000;
+    margin-bottom: 40px;
+    margin-top: 40px;
+        @include tablet{
+            font-size: 14px;
+            line-height: 176%;
+            margin-bottom: 40px;
+    }
+        @include desktop {
+            font-size: 16px;
+            line-height: 176%;
+            margin-bottom: 32px;
+            margin-top: 0px;
+    }
+}
+
+
+.about__text {
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 162%;
+    letter-spacing: 0.04em;
+    color: #907E82;
+    margin-bottom: 15px;
+    @include tablet {
+        font-size: 14px;
+        line-height: 176%;
+    }
+    @include desktop{
+        font-size: 14px;
+        line-height: 194%;
+        margin-bottom: 40px;
+    }
+
+}
+
+.about__last-text {
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 162%;
+    letter-spacing: 0.04em;
+    color: #907E82;
+    margin-bottom: 20px;
+    @include tablet {
+        font-size: 14px;
+        line-height: 176%;
+    }
+    @include desktop{
+        font-size: 14px;
+        line-height: 194%;
+        margin-bottom: 40px;
+    }
+}
+
+.about__main-text {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    width: 220px;
+    @include tablet {
+    width: 334px;
+    margin-left: 32px;
+    
+    }
+    @include desktop {
+        width: 463px;
+        margin-left: 139px;
+        
+    }
+}
+
+
+
+
+.about-main {
+    
+    justify-content: space-between;
+    align-items: center;
+   
+    @include tablet{
+        display: flex;
+    }
+    @include desktop{
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    
+}
+
+.about-btn {
+    font-weight: 700;
+    line-height: 21px;
+    color: $header-btn-text;
+    background: $header-menu-text;
+    border-radius: 22px;
+    min-width: 176px;
+    height: 44px;
+    border: transparent;
+    cursor: pointer;
+        &:hover,
+        &:focus {
+            background-color: $header-hover-btn;
+        }
+}
+
+.about-btn-icon {
+    width: 7px;
+    height: 9px;
+    fill: $acent-color;
+    margin-left: 13px;
+    
+}
