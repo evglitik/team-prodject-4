@@ -1,5 +1,5 @@
 .footer {
-    background-color: var(--advantages-background);
+    background-color: $advantages-background;
    
 }
 
@@ -19,7 +19,7 @@
     font-size: 18px;
     line-height: 1.16;
     text-transform: uppercase;
-    color: var(--text-pre-title);
+    color: $text-pre-title;
     margin-bottom: 16px;
     @include tablet {
         font-size: 26px;
@@ -40,7 +40,7 @@
     line-height: 1.14;
     letter-spacing: 0.04em;
     text-transform: uppercase;
-    color: var(--header-btn-text);
+    color: $header-btn-text;
     margin-bottom: 40px;
     @include tablet {
         font-size: 48px;
@@ -61,7 +61,7 @@
     fill: #FEA5BB;
     &:hover,
     &:focus {
-        fill: var(--header-menu-text-hover);
+        fill: $header-menu-text-hover;
     }
 }
 
@@ -96,7 +96,7 @@
     font-size: 12px;
     line-height: 1.86; /* identical to box height, or 30px */
     letter-spacing: 0.02em;
-    color: var(--acent-color);
+    color: $acent-color;
     @include tablet {
         font-size: 14px;
     }
