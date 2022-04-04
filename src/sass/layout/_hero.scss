@@ -61,6 +61,7 @@
         border-radius: 50%;
         border: none;
         background-color: $hero-background-elips;
+
         position: absolute;
         top: 83px;
         left: 21px;
@@ -97,21 +98,32 @@
         height: 410px;
         top: 92px;
         left: 102px;
-        background-image: url(/images/hero/mob/pic@1.png);
         background-size: cover;
+        background-image: url(/images/hero/mob/pic1.png);
+        @include retin {
+            background-image: url(/images/hero/mob/pic@1.png); 
+          }
+
         @include tablet {
             width: 143px;
             height: 336px;
             top: 80px;
             left: 322px;
-            background-image: url(/images/hero/tabl/pic@1.png);
+            background-image: url(/images/hero/tabl/pic1.png);
+            @include retin {
+                background-image: url(/images/hero/tabl/pic@1.png); 
+              }
         }
+        
         @include desktop {
             width: 236px;
             height: 557px;
             top: 108px;
             left: 636px;
-            background-image: url(/images/hero/desk/pic@1.png);
+            background-image: url(/images/hero/desk/pic1.png);
+            @include retin {
+                background-image: url(/images/hero/desk/pic@1.png); 
+              }
         }
     }
 
