@@ -150,7 +150,29 @@
         }
     }
     &__milk-txt{
+        display: block;
+        position: absolute;
+        font-family: DM Sans;
+        font-style:normal;
+        color: #ffffff;
+        @include tablet {
+            font-size: 8px;
+            line-height: 158%;
+            width: 114px;
+            height: 48px;
+            top: 287px;
+            left: 184px;
+        }
 
+        @include desktop {
+            font-size: 14px;
+            line-height: 140%;
+            width: 200px;
+            height: 78px;
+            top: 456px;
+            left: 229px;
+            
+        }
     }
 
     &__tasty-bg{
