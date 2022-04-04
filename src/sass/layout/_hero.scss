@@ -1,16 +1,11 @@
 .hero{
-    //width: 320px;
-    //height: 502px;
     background-color:$hero-background ;
-    //margin: 60px;
-    //background-image: linear-gradient();
     &__section{
         
         position: relative;
         padding: 194px 20px 158px;
         width: 300px;
         height: 502px;
-        //overflow: hidden;
         @include tablet {
             width: 768px;
             height: 416px;
@@ -30,7 +25,6 @@
         font-weight: 400;
         left: 5px;
         @include tablet {
-            //@at-root: ;
             top: 102px;
             left: 16px;
         }
@@ -41,15 +35,28 @@
     }
     &__text-up{
         font-size: 26px;
-        line-height: 30px;
+        line-height: 1.15;
         color: #ffffff;
+        @include tablet {
+            font-size: 22px;
+        }
+        @include desktop {
+            font-size: 38px;
+        }
     }
     &__title {
         font-size: 48px;
-        line-height: 96.5%;
+        line-height: 0.965;
         color: #D41443;
         margin-bottom: 20px;
-        
+        @include tablet {
+            font-size: 34px;
+            line-height: 0.9;
+        }
+        @include desktop {
+            font-size: 58px;
+            line-height: 0.9;
+        }
     }
     &__buttons {
         display: flex;
@@ -182,7 +189,6 @@
     &__milk-btn{
         opacity: 0;
         position: absolute;
-        //background-size: cover;
         border: none;
         border-radius: 50%;
         background-color: #ffffff;
@@ -193,9 +199,6 @@
             height: 18px;
             top: 342px;
             left: 184px;
-            //background-image: url(/images/hero/desk/arrow-right.png);
-
-            
         }
 
         @include desktop {
@@ -204,41 +207,37 @@
             height: 26px;
             top: 554px;
             left: 229px;
-            //background-image: url(/images/hero/desk/arrow-right.png);
-            
         }
+
         &:hover{
-            //border: 1px solid #D41443;
-            //border-color:  #D41443;
             cursor: pointer;
         }
     }
 
     &__tasty-bg{
-        
-            position: absolute;
-            background-size: cover;
-            @include tablet {
-                width: 190px;
-                height: 150px;
-                top: 265px;
-                left: 546px;
-                background-image: url(/images/hero/tabl/pic2.png);
-                @include retin {
-                    background-image: url(/images/hero/tabl/pic@2.png); 
-                  }
-            }
+        position: absolute;
+        background-size: cover;
+        @include tablet {
+            width: 190px;
+            height: 150px;
+            top: 265px;
+            left: 546px;
+            background-image: url(/images/hero/tabl/pic2.png);
+            @include retin {
+                background-image: url(/images/hero/tabl/pic@2.png); 
+                }
+        }
     
-            @include desktop {
-                width: 304px;
-                height: 241px;
-                top: 424px;
-                left: 960px;
-                background-image: url(/images/hero/desk/pic2.png);
-                @include retin {
-                    background-image: url(/images/hero/desk/pic@2.png); 
-                  }
-            }
+        @include desktop {
+            width: 304px;
+            height: 241px;
+            top: 424px;
+            left: 960px;
+            background-image: url(/images/hero/desk/pic2.png);
+            @include retin {
+                background-image: url(/images/hero/desk/pic@2.png); 
+                }
+        }
         
     }
     &__cafes16, &__food23 {
@@ -246,7 +245,6 @@
         opacity: 0;
         border-radius: 50%;
         background-color: #ffffff;
-        //left: 720px;
         @include tablet {
             opacity: 1;
             width: 16px;
@@ -259,9 +257,9 @@
             width: 30px;
             height: 30px;
             left: 1234px;
-            
         }
     }
+
     &__cafes16{
         @include tablet {
             top: 92px;
@@ -269,7 +267,6 @@
 
         @include desktop {
             top: 153px;
-            
         }
     }
     
@@ -280,7 +277,6 @@
 
         @include desktop {
             top: 245px;
-            
         }
     }
 
@@ -290,45 +286,39 @@
         color: #D41443;
         font-family: Titan One;
         font-style: normal;
-        
-        
+        line-height: 0.9;
         z-index: 2;
         @include tablet {
             opacity: 1;
             font-size: 28px;
-            line-height: 100%;
             left: 693px;
         }
 
         @include desktop {
             opacity: 1;
             font-size: 46px;
-            line-height: 100%;
             left: 1192px;
             
         }
 
     }
     &__txt16{
-        //top: 95px;
         @include tablet {
             top: 95px;
         }
 
         @include desktop {
             top: 153px;
-            
         }
     }
+
     &__txt23{
-        
         @include tablet {
             top: 154px;
         }
 
         @include desktop {
             top: 245px;
-            
         }
     }
     &__txt-cafes, &__txt-food{
@@ -336,6 +326,7 @@
         position: absolute;
         color: #ffffff;
         font-family: "DM sans";
+
         
         right: 42px;
         @include tablet {
@@ -385,19 +376,19 @@
 .btn3 {
     background-color: $acent-color;
     color:#ffffff;
-    background-color: #D41443;//margin-left: 8px;
+    background-color: #D41443;
     @include desktop {
-        //margin-left: 12px;
+       
         
     }
     &:hover{
-        background-color: #D42443;;
+        background-color: #D42443;
         font-weight: 500;
     }
 }
 .btn2 {
     background-color: $acent-color;
-    color: #D41443;;
+    color: #D41443;
     background-color: #ffffff;
     margin-left: 8px;
     @include desktop {
@@ -411,9 +402,7 @@
 }
 .arrow{
     position: relative;
-    //top: 5px;
     bottom: 4px;
-    //right: 1px;
     width: 5px;
     height: 5px;
     fill: #D42443;
