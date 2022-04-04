@@ -1,6 +1,8 @@
 .customer-reviews {
-    padding-top: 80px; //УДАЛИТЬ
     padding-bottom: 48px;
+        @include tablet {
+            padding-bottom: 80px;
+        }
 }
 
 .costumer-card__client-emily--photo-position, 
@@ -8,12 +10,15 @@
 .costumer-card__client-linda--photo-position {
     margin: 0 auto;
     width: 85px;
-    margin-bottom: 75px;
+    margin-bottom: 32px;
+    @include tablet {
+        margin-bottom: 20px;
+    }
 }
 
 .costumer-card__tumb-text { // может давать проскролл на мобиле
     width: 280px;
-    margin: 0 auto 33px;
+    margin: 0 auto;
     background-color: #FAFAFA;
     position: relative;
         &::before {
@@ -25,32 +30,96 @@
             width: 54px;
             height: 40px;
         }
+    @include tablet {
+        width: 620px;
+        height: 164px;
+        &::before {
+            position: absolute;
+            content: " ";
+            background: url(../images/slaider-lapky__tablet.png);
+                width: 60px;
+                height: 40px;
+                top: 20px;
+                left: 6px;
+                    }
+    }
+}
+
+.costumer-card__tex--size {
+    padding-top: 43px;
+    padding-left: 65px;
+    padding-right: 58px;
+        @include tablet {
+            padding-top: 20px;
+            padding-left: 6px;
+            padding-right: 6px;
+            padding-bottom: 36px;
+
+            background-image: repeating-linear-gradient(to bottom,
+                    #cc030300 0px,
+                    #92000000 28px,
+                    #E1E1E1 31px,
+                    #E1E1E1 1px);
+        }
 }
 
 .costumer-card__tex {
     position: relative;
-    // width: 157px;
-    padding-top: 43px;
-    padding-bottom: 26px;
-    // margin: 0 auto;
-    padding-left: 65px;
-    padding-right: 58px;
-}
-
-.costumer-card__tex {
     font-weight: 500;
     font-size: 12px;
     line-height: 2.58;
     text-align: center;
+    padding-bottom: 17px;
     color: $text-darck;
+    background-image: repeating-linear-gradient(to bottom,
+                #cc030300 0px,
+                #92000000 28px,
+                #E1E1E1 31px,
+                #E1E1E1 1px);
+    @include tablet {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 2.16;
+        text-align: center;
+        letter-spacing: 0.04em;
+        background-image: none;
+
+        padding-left: 45px;
+        padding-right: 50px;
+        padding-bottom: 8px;
+        padding-top: 17px;
+        background: none;
+        // background-image: repeating-linear-gradient(to bottom,
+        //     #cc030300 0px,
+        //     #92000000 28px,
+        //     #E1E1E1 31px,
+        //     #E1E1E1 1px);
+                    
+    }
 }
 
 .costumer-card__name {
+    position: relative;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.86;
     text-align: center;
-    margin-bottom: 48px;
+    padding-top: 28px;
+    padding-bottom: 16px;
+        &::after {
+            position: absolute;
+            top: 16px;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            content: "";
+            width: 32px;
+            height: 4px;
+            background: url(../images/slaider-dots-deckor.png);;
+        }
+}
+
+.slick-dotted.slick-slider {
+    margin-bottom: 0;
 }
 
 .slaider {
@@ -88,7 +157,7 @@
         left: 0;
         border-radius: 0%;
         content: "";
-        width: 12px;
+        width: 12.4px;
         height: 12px;
         background: url(../images/slaider-home-un-acktive.png);
     }
