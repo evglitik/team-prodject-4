@@ -3,23 +3,28 @@
         @include tablet {
             padding-bottom: 80px;
         }
+        @include desktop {
+            padding-bottom: 120px;
+        }
 }
 
 .costumer-card__client-emily--photo-position, 
 .costumer-card__client-luisa--photo-position, 
 .costumer-card__client-linda--photo-position {
-    margin: 0 auto;
+    margin: 0 auto 32px;
     width: 85px;
-    margin-bottom: 32px;
     @include tablet {
         margin-bottom: 20px;
+    }
+    @include desktop {
+        margin-bottom: 12px;
     }
 }
 
 .costumer-card__tumb-text { // может давать проскролл на мобиле
     width: 280px;
     margin: 0 auto;
-    background-color: #FAFAFA;
+    background-color: $slaider-background-color;
     position: relative;
         &::before {
             position: absolute;
@@ -32,34 +37,47 @@
         }
     @include tablet {
         width: 620px;
-        height: 164px;
+        background-color: $slaider-background-color;
         &::before {
             position: absolute;
             content: " ";
-            background: url(../images/slaider-lapky__tablet.png);
-                width: 60px;
-                height: 40px;
-                top: 20px;
-                left: 6px;
+            background: none;
+                width: 0px;
+                height: 0px;
+                top: 0px;
+                left: 0px;
                     }
+    }
+    @include desktop {
+        width: 1034px;
     }
 }
 
 .costumer-card__tex--size {
-    padding-top: 43px;
-    padding-left: 65px;
-    padding-right: 58px;
+    padding: 43px 58px 0px 65px;
         @include tablet {
-            padding-top: 20px;
-            padding-left: 6px;
-            padding-right: 6px;
-            padding-bottom: 36px;
-
-            background-image: repeating-linear-gradient(to bottom,
-                    #cc030300 0px,
-                    #92000000 28px,
-                    #E1E1E1 31px,
-                    #E1E1E1 1px);
+            padding: 37px 6px 18px 6px;
+            &::before {
+                        position: absolute;
+                        content: " ";
+                        background: url(../images/slaider-lapky__tablet.png);
+                        width: 60px;
+                        height: 40px;
+                        top: 20px;
+                        left: 6px;
+                    }
+        }
+        @include desktop {
+            padding: 45px 107px 23px 105px;
+            &::before {
+                position: absolute;
+                content: " ";
+                background: url(../images/slaider-lapky__desctop.png);
+                width: 54px;
+                height: 40px;
+                top: 32px;
+                left: 105px;
+            }
         }
 }
 
@@ -77,24 +95,22 @@
                 #E1E1E1 31px,
                 #E1E1E1 1px);
     @include tablet {
-        font-weight: 500;
         font-size: 14px;
         line-height: 2.16;
-        text-align: center;
         letter-spacing: 0.04em;
         background-image: none;
-
-        padding-left: 45px;
-        padding-right: 50px;
-        padding-bottom: 8px;
-        padding-top: 17px;
+        padding: 0px 50px 18px 45px;
         background: none;
-        // background-image: repeating-linear-gradient(to bottom,
-        //     #cc030300 0px,
-        //     #92000000 28px,
-        //     #E1E1E1 31px,
-        //     #E1E1E1 1px);
-                    
+        background-image: repeating-linear-gradient(to bottom,
+            #cc030300 0px,
+            #92000000 28px,
+            #E1E1E1 31px,
+            #E1E1E1 1px);                   
+    }
+    @include desktop {
+        padding: 0px 35px 8px 37px;
+        font-size: 16px;
+        line-height: 1.86;
     }
 }
 
@@ -104,18 +120,30 @@
     font-size: 14px;
     line-height: 1.86;
     text-align: center;
-    padding-top: 28px;
-    padding-bottom: 16px;
+    padding-top: 20px;
+    margin-top: 16px;
+    margin-bottom: 8px;
         &::after {
             position: absolute;
-            top: 16px;
+            top: 0px;
             left: 50%;
-            transform: translate(-50%, -50%);
+            transform: translate(-50%, 0%);
             content: "";
             width: 32px;
             height: 4px;
             background: url(../images/slaider-dots-deckor.png);;
         }
+    @include tablet{
+        font-size: 16px;
+        padding-top: 20px;
+        margin-bottom: 24px;
+        margin-top: 4px;
+    }
+    @include desktop {
+        font-size: 20px;
+        margin-bottom: 24px;
+        margin-top: 24px;
+    }
 }
 
 .slick-dotted.slick-slider {
