@@ -12,12 +12,16 @@
     }
     &__items{
         
-        width: 100vw;
-        max-height: 122px;
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        align-content: center;
+        width: 304px;
+        min-height: 128px;
+        display: grid;
+        grid-template-columns: repeat(7, 1fr);
+        grid-column-gap: 2px;
+        grid-row-gap: 2px;
+        // display: flex;
+        // flex-direction: column;
+        // flex-wrap: wrap;
+        // align-content: center;
         @media screen and (min-width: 768px) {
             width: 768px;
             max-height: 264px;
