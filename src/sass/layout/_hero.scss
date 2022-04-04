@@ -415,4 +415,9 @@
     width: 5px;
     height: 5px;
     fill: #D42443;
+    @include desktop {
+        bottom: 1px;
+        width: 8px;
+        height: 8px;
+    }
 }
