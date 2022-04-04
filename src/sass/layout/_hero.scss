@@ -177,6 +177,37 @@
             
         }
     }
+    &__milk-btn{
+        opacity: 0;
+        position: absolute;
+        background-size: cover;
+        border-radius: 50%;
+
+        @include tablet {
+            opacity: 1;
+            width: 18px;
+            height: 18px;
+            top: 342px;
+            left: 184px;
+            background-image: url(/images/hero/desk/arrow-right.png);
+            
+        }
+
+        @include desktop {
+            opacity: 1;
+            width: 26px;
+            height: 26px;
+            top: 554px;
+            left: 229px;
+            background-image: url(/images/hero/desk/arrow-right.png);
+            
+        }
+        &:hover{
+            border: 1px solid #D41443;
+            //border-color:  #D41443;
+            cursor: pointer;
+        }
+    }
 
     &__tasty-bg{
         
@@ -333,10 +364,14 @@
         }
     }
 }
-.btn2 {
+.btn2, .btn3 {
     background-color: #ffffff;
     color: $acent-color;
-    margin-left: 8px;
+    @include desktop {
+        border-radius: 16px;
+        font-size: 14px;
+        padding: 12px 20px;
+    }
     &:hover{
         background-color: #ecebeb;
         font-weight: 500;
@@ -344,10 +379,28 @@
 }
 .btn3 {
     background-color: $acent-color;
-    color: #ffffff;
-    margin-left: 8px;
+    color:#ffffff;
+    background-color: #D41443;//margin-left: 8px;
+    @include desktop {
+        //margin-left: 12px;
+        
+    }
     &:hover{
-        background-color: #c7133e;
+        background-color: #D42443;;
+        font-weight: 500;
+    }
+}
+.btn2 {
+    background-color: $acent-color;
+    color: #D41443;;
+    background-color: #ffffff;
+    margin-left: 8px;
+    @include desktop {
+        margin-left: 12px;
+        
+    }
+    &:hover{
+        background-color: #ecebeb;
         font-weight: 500;
     }
 }
