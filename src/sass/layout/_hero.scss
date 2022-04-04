@@ -2,8 +2,10 @@
     //width: 320px;
     //height: 502px;
     background-color:$hero-background ;
+    //margin: 60px;
     //background-image: linear-gradient();
     &__section{
+        
         position: relative;
         padding: 194px 20px 158px;
         width: 300px;
@@ -415,4 +417,9 @@
     width: 5px;
     height: 5px;
     fill: #D42443;
+    @include desktop {
+        bottom: 1px;
+        width: 8px;
+        height: 8px;
+    }
 }
