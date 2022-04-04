@@ -27,6 +27,15 @@
         font-style: normal;
         font-weight: 400;
         left: 5px;
+        @include tablet {
+            //@at-root: ;
+            top: 102px;
+            left: 16px;
+        }
+        @include desktop {
+            top: 147px;
+            left: 16px;
+        }
     }
     &__text-up{
         font-size: 26px;
@@ -79,18 +88,7 @@
             left: 517px;
         }
     }
-    // &__pic{
-    //     position: absolute;
-    //     z-index: 1;
-    //     top: 92px;
-    //     left: 102px;
-    //     @include tablet {
-    //         width: 143px;
-    //         height: 336px;
-    //         top: 80px;
-    //         left: 322px;
-    //     }
-    // }
+
     &__pic-bg{
         position: absolute;
         z-index: 1;
@@ -114,7 +112,7 @@
                 background-image: url(/images/hero/tabl/pic@1.png); 
               }
         }
-        
+
         @include desktop {
             width: 236px;
             height: 557px;
@@ -126,7 +124,50 @@
               }
         }
     }
+    &__milk-bg{
+        position: absolute;
+        background-size: cover;
+        @include tablet {
+            width: 152px;
+            height: 154px;
+            top: 246px;
+            left: 32px;
+            background-image: url(/images/hero/tabl/pic3.png);
+            @include retin {
+                background-image: url(/images/hero/tabl/pic@3.png); 
+              }
+        }
 
+        @include desktop {
+            width: 213px;
+            height: 216px;
+            top: 388px;
+            left: 32px;
+            background-image: url(/images/hero/desk/pic3.png);
+            @include retin {
+                background-image: url(/images/hero/desk/pic@3.png); 
+              }
+        }
+    }
+    &__milk-txt{
+
+    }
+
+    &__tasty-bg{
+
+    }
+    &__cafes16{
+
+    }
+    &__txt16{
+
+    }
+    &__food23{
+
+    }
+    &__txt23{
+
+    }
 }
 .btn2 {
     background-color: #ffffff;
