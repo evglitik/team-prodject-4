@@ -11,6 +11,13 @@
 
 }
 
+.footer_title {
+    margin-bottom: 40px;
+    @include desktop {
+        margin-bottom: 60px;
+    }    
+}
+
 .footer_title-one {
     width: 232px;
     font-family: 'Titan One';
@@ -22,12 +29,15 @@
     color: $text-pre-title;
     margin-bottom: 16px;
     @include tablet {
+        width: 340px;
         font-size: 26px;
         line-height: 1.15;
+        letter-spacing: 0.04em;
     }
     @include desktop {
         width: 472px;
         font-size: 30px;
+        line-height: 1.13;
     }
 }
 
@@ -41,12 +51,13 @@
     letter-spacing: 0.04em;
     text-transform: uppercase;
     color: $header-btn-text;
-    margin-bottom: 40px;
+
     @include tablet {
         font-size: 48px;
+        letter-spacing: 0.06em;
     }
     @include desktop {
-        width: 474px;
+        width: 477px;
         font-size: 58px;
     }
 }
@@ -79,13 +90,14 @@
     font-weight: 700;
     font-size: 12px;
     line-height: 1.86; /* identical to box height, or 30px */
-    letter-spacing: 0.02em;
     color: #000000;
     @include tablet {
         font-size: 14px;
+    
     }
     @include desktop {
         font-size: 16px;
+        letter-spacing: 0.02em;
     }
 }
 
@@ -95,13 +107,15 @@
     font-weight: 700;
     font-size: 12px;
     line-height: 1.86; /* identical to box height, or 30px */
-    letter-spacing: 0.02em;
     color: $acent-color;
+
     @include tablet {
         font-size: 14px;
     }
+
     @include desktop {
         font-size: 16px;
+        letter-spacing: 0.02em;
     }
 }
 
@@ -111,21 +125,17 @@
 }
 
 .ice_corp {
-    height: 78px;
     border-top: 1px solid #E1E1E1;
-    margin-bottom: 20px;
-    @include tablet {
-        height: 40px;
-        margin-bottom: 4px;
-    }
 }
 
 .ice_corp-list {
-    margin-top: 16px;
+    padding-top: 16px;
+    padding-bottom: 20px;
     @include tablet {
     display: flex;
     justify-content: center;
-    margin-top: 8px;
+    padding-top: 4px;
+    padding-bottom: 8px;
     }
 }
 
