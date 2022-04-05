@@ -192,9 +192,11 @@
     margin-left: 20px;
     fill: $header-btn-text;
 
+    .header-btn:hover &,
+    .header-btn:focus &,
     .mob-menu-btn:hover &,
     .mob-menu-btn:focus & {
-        fill: $header-menu-text-hover;
+        fill: $header-hover-btn;
     }
 }
 
