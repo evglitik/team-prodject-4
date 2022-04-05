@@ -70,8 +70,7 @@
 
 .net_social-link {
     fill: #FEA5BB;
-    &:hover,
-    &:focus {
+    &:hover {
         fill: $header-menu-text-hover;
     }
 }
@@ -132,19 +131,22 @@
     padding-top: 16px;
     padding-bottom: 20px;
     @include tablet {
-    display: flex;
-    justify-content: center;
-    padding-top: 4px;
+    padding-top: 8px;
     padding-bottom: 8px;
     }
 }
 
 .ice_corp-title {
+    max-width: 140px;
+    margin-left: auto;
+    margin-right: auto;
     font-family: 'DM Sans';
     font-style: normal;
     font-weight: 700;
     font-size: 14px;
     line-height: 1.52; /* or 21px */
-    text-align: center;
     color: #907E82;
+    @include tablet {
+        max-width: 276px;
+    }
 }
