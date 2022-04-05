@@ -6,6 +6,10 @@
         padding: 194px 20px 158px;
         width: 300px;
         height: 502px;
+        @include mobile {
+            width: 300px;
+            height: 502px;
+        }
         @include tablet {
             width: 768px;
             height: 416px;
