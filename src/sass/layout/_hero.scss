@@ -50,6 +50,7 @@
         color: #D41443;
         margin-bottom: 20px;
         @include tablet {
+            //@at-root: ;
             font-size: 34px;
             line-height: 0.9;
         }
