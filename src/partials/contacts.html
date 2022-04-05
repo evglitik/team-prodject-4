@@ -1,12 +1,20 @@
 <section class="contacts-section">
   <div class="container">
-    <h2></h2>
+    <h2 class="fulse-title">Contacts</h2>
     <ul class="contacts-list">
       <li class="contacts-list__item">
-        <span class="contacts-list__category cafe">cafe</span>
+        <div class="contacts-list__overlay">
+          <iframe class="contacts-list__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2968.535355519792!2d-87.69943958455744!3d41.92434627921859!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880fd29d7c79d085%3A0xc19ae13c746621e!2sPretty%20Cool%20Ice%20Cream!5e0!3m2!1sru!2spl!4v1649047510193!5m2!1sru!2spl" width="315" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <address class="contacts-list__adress">
+          <a href="tel:+610383766284 ">+61(0) 383 766 284 </a>
+          <a href="mailto:noreply@envato.com">noreply@envato.com</a>
+        </address>
+        </div>
+        <div class="contacts-list__content">
+          <span class="contacts-list__category cafe">cafe</span>
         <h2 class="contacts-list__title">Chicago</h2>
         <p class="cotacts-list__description">
-          Fusce ut velit laoreet, tempus arcu molestie vulputate
+          Pretty Cool Ice Cream - local stop for ice cream novelties
         </p>
         <div class="contacts-list__wrap">
           <span class="contacts-list__days-open">Monday - Friday</span>
@@ -18,12 +26,21 @@
           <a href="tel:+610383766284 ">+61(0) 383 766 284 </a>
           <a href="mailto:noreply@envato.com">noreply@envato.com</a>
         </address>
+        </div>
       </li>
       <li class="contacts-list__item">
-        <span class="contacts-list__category foodtrack">foodtruck</span>
-        <h2 class="contacts-list__title">Los Angeles</h2>
+        <div class="contacts-list__overlay" overlay-active>
+          <iframe class="contacts-list__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2968.6337814494!2d-87.69667228505448!3d41.922230770631224!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880fd29dcce7f967%3A0x5236702b4c8d8a78!2sBaskin-Robbins!5e0!3m2!1sru!2spl!4v1649050181219!5m2!1sru!2spl" width="315" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <address class="contacts-list__adress">
+          <a href="tel:+610383766284 ">+61(0) 383 766 284 </a>
+          <a href="mailto:noreply@envato.com">noreply@envato.com</a>
+        </address>
+        </div>
+        <div class="contacts-list__content">
+          <span class="contacts-list__category foodtrack">foodtruck</span>
+        <h2 class="contacts-list__title">Chicago</h2>
         <p class="cotacts-list__description">
-          Fusce ut velit laoreet, tempus arcu molestie vulputate
+          Baskin-Robbins - soft-serve ice cream, burgers since 1959
         </p>
         <div class="contacts-list__wrap">
           <span class="contacts-list__days-open">Monday - Friday</span>
@@ -35,12 +52,21 @@
           <a href="tel:+610383766284 ">+61(0) 383 766 284 </a>
           <a href="mailto:noreply@envato.com">noreply@envato.com</a>
         </address>
+        </div>
       </li>
       <li class="contacts-list__item">
-        <span class="contacts-list__category cafe">cafe</span>
-        <h2 class="contacts-list__title">New York</h2>
+        <div class="contacts-list__overlay" overlay-active>
+          <iframe class="contacts-list__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2968.857318671466!2d-87.68987188505466!3d41.917425870932135!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880fd2978a90e2bd%3A0xa5f9de5c65894821!2sMargie&#39;s%20Candies!5e0!3m2!1sru!2spl!4v1649050257327!5m2!1sru!2spl" width="315" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <address class="contacts-list__adress">
+          <a href="tel:+610383766284 ">+61(0) 383 766 284 </a>
+          <a href="mailto:noreply@envato.com">noreply@envato.com</a>
+        </address>
+        </div>
+        <div class="contacts-list__content">
+          <span class="contacts-list__category cafe">cafe</span>
+        <h2 class="contacts-list__title">Chicago</h2>
         <p class="cotacts-list__description">
-          Fusce ut velit laoreet, tempus arcu molestie vulputate
+          Margie's Candies - serving ice cream&sweet since 1921
         </p>
         <div class="contacts-list__wrap">
           <span class="contacts-list__days-open">Monday - Friday</span>
@@ -52,16 +78,17 @@
           <a href="tel:+610383766284 ">+61(0) 383 766 284 </a>
           <a href="mailto:noreply@envato.com">noreply@envato.com</a>
         </address>
+        </div>
       </li>
     </ul>
     <div class="contacts-button-wrap">
-      <button type="button" class="contacts-button">
+      <button type="button" class="contacts-button button-locations" data-modal-open>
         Our Locations
         <svg class="contact-button__icon" width="7px" height="9px">
           <use href="/images/icons.svg#icon-arrow-right-short"></use>
         </svg>
       </button>
-      <button type="button" class="contacts-button contacts-button--color">
+      <button type="button" class="contacts-button button-franchise">
         Franchise
         <svg class="contact-button__icon" width="7px" height="9px">
           <use href="/images/icons.svg#icon-arrow-right-short"></use>
@@ -70,3 +97,4 @@
     </div>
   </div>
 </section>
+
