@@ -1,5 +1,12 @@
 .about {
     background-color: $advantages-background;
+    padding-bottom: 40px;
+    @include tablet{
+        padding-bottom: 80px;
+    }
+    @include desktop {
+        padding-bottom: 100px;
+    }
 }
 
 .about__container {
@@ -8,7 +15,7 @@
     background-size: contain;
     background-position-y: 595px;
 
-    width: 100%;
+    
 
     @include tablet{
         background-image: none;
@@ -197,6 +204,7 @@ img {
         &:focus {
             background-color: $header-hover-btn;
         }
+        
 }
 
 .about-btn-icon {
