@@ -1,51 +1,71 @@
+$vert: 40px;
+$hor: 42px;
 .gallery {
-    padding-bottom:120px;
+    padding-bottom: 80px;
+    @media screen and (min-width: 1280px) {
+        padding-bottom: 120px;
+    }
     &__box{
-        display: flex;
+       
         background-image: linear-gradient(
     to bottom,
     #fff5f6 40%,
     #ffffff 40%
     
-  );
+    );
   
     }
     &__items{
-        
-        width: 304px;
-        min-height: 128px;
-        display: grid;
-        grid-template-columns: repeat(7, 1fr);
-        grid-column-gap: 2px;
-        grid-row-gap: 2px;
-        // display: flex;
-        // flex-direction: column;
-        // flex-wrap: wrap;
-        // align-content: center;
+        //position: absolute;
+        position: relative;
+        //bottom: $hor;
+
+        left: 18px;
+        //width: 310px;
+        height: 122px;
+        display: flex;
+        justify-content: center;
+
         @media screen and (min-width: 768px) {
-            width: 768px;
-            max-height: 264px;
+            bottom: $hor*2;
+            left: 40px;
+            min-height: 264px;
         }
         @media screen and (min-width: 1280px) {
-            width: 1280px;
-            max-height: 430px;
+            bottom: $hor*3.5;
+            left: 75px;
+            min-height: 430px;
         }
         }
+        &__item{
+            position: absolute;
+            //bottom: 40px;
+            //position: relative;
+            }
+                
     &__prew {
-        
-        //background-color: #fff5f6;
+        position: absolute;
         margin: 2px 2px;
         border-radius: 4px;
         overflow: hidden;
-        width: auto;
-        height: auto;
+        min-width: 40px;
+        min-height: 40px;
         @media screen and (min-width: 768px) {
             margin: 4px 4px;
-        border-radius: 8px;
+            min-width: 80px;
+            min-height: 80px;
+            border-radius: 8px;
         }
         @media screen and (min-width: 1280px) {
+            min-width: 140px;
+            min-height: 140px;
             margin: 6px 6px;
-        border-radius: 10px;
+            border-radius: 10px;
+        }
+
+        &:hover, &:focus {
+            z-index: 16;
+            cursor: pointer;
         }
     }
         
@@ -64,22 +84,168 @@
 
         }
         &:hover, &:focus {
-
-            width: 122px;
-            height: 122px;
-
+            z-index: 16;
+            // width: 3*$hor;
+            // height: 3*$hor;
+            width: 2*$hor;
+            height: 2*$hor;
+            cursor: pointer;
+            //transform: translate(-50%, -50%);
+            @media screen and (min-width: 480px) {
+                width: 3*$hor;
+                height: 3*$hor;
+            }
             @media screen and (min-width: 768px) {
-                width: 264px;
-                height: 264px;
+                width: 3*$hor*2;
+                height: 3*$hor*2;
             }
             @media screen and (min-width: 1280px) {
-                width: 415px;
-                height: 415px;
+                width: 3*$hor*3.5;
+                height: 3*$hor*3.5;
+    
             }
         }
     }    
 }
 
+.h1{
+    //position: absolute;
+    
+    right: -3*$hor;
+    @media screen and (min-width: 480px) {
+        right: -3*$hor;
+    }
+    @media screen and (min-width: 768px) {
+        right: -3*$hor*2;
+    }
+    @media screen and (min-width: 1280px) {
+        right: -3*$hor*3.5;
+
+    }
+    
+    }
+.h2{
+    
+    // position: relative;
+    right: -2*$hor;
+    @media screen and (min-width: 480px) {
+        right: -2*$hor;
+    }
+    @media screen and (min-width: 768px) {
+        right: -2*$hor*2;
+    }
+    @media screen and (min-width: 1280px) {
+        right: -2*$hor*3.5;
+
+    }
+    
+} 
+.h3{
+    
+    // position: relative;
+    right: -$hor;
+    @media screen and (min-width: 480px) {
+        right: -1*$hor;
+    }
+    @media screen and (min-width: 768px) {
+        right: -1*$hor*2;
+    }
+    @media screen and (min-width: 1280px) {
+        right: -1*$hor*3.5;
+
+    }
+    
+} 
+.h4{
+    right: 0px;
+} 
+.h5{margin-left: -1px;
+    //position: absolute;
+    // position: relative;
+    left: -2*$hor;
+    @media screen and (min-width: 480px) {
+        left: -2*$hor;
+
+    }
+    @media screen and (min-width: 768px) {
+        left: -2* $hor*2;
+    }
+    @media screen and (min-width: 1280px) {
+        left: -2*$hor*3.5;
+
+    }
+}
+.h6{
+    margin-left: -2px;
+    left: -3*$hor;
+    @media screen and (min-width: 480px) {
+        left: -3*$hor;
+
+    }
+    @media screen and (min-width: 768px) {
+        left: -3*$hor*2;
+    }
+    @media screen and (min-width: 1280px) {
+        left: -3*$hor*3.5;
+
+    }
+}
+.h7{margin-left: -3px;
+    left: -4*$hor;
+    @media screen and (min-width: 480px) {
+        left: -4*$hor;
+
+    }
+    @media screen and (min-width: 768px) {
+        left: -4*$hor*2;
+    }
+    @media screen and (min-width: 1280px) {
+        left: -4*$hor*3.5;
+
+    }
+}
+
+.v1{
+top: 0;
+@media screen and (min-width: 480px) {
+    top: $hor;
+}
+@media screen and (min-width: 768px) {
+    top: $hor*2;
+}
+@media screen and (min-width: 1280px) {
+    top: $hor*3.5;
+
+}
+} 
+.v2{
+top: $hor;
+@media screen and (min-width: 480px) {
+    top: 2*$hor;
+}
+@media screen and (min-width: 768px) {
+    top: 2*$hor*2;
+}
+@media screen and (min-width: 1280px) {
+    top: 2*$hor*3.5;
+
+}
+} 
+.v3{
+    
+    margin-bottom: -1px;
+bottom: -3*$hor;
+@media screen and (min-width: 480px) {
+    bottom: -4*$hor;
+}
+@media screen and (min-width: 768px) {
+    bottom: -4*$hor*2;
+}
+@media screen and (min-width: 1280px) {
+    bottom: -4*$hor*3.5;
+
+}
+} 
 .zerro{
     //background-color: #ffffff;
     margin: 0;
@@ -91,10 +257,23 @@
         padding: 60px 0;
     }
 }
-
+.forsmagore{
+    
+    @media screen and (max-width: 479px) {
+        opacity: 1;
+        position: absolute;
+        top: 40px;
+        z-index: 200;
+    }
+    @media screen and (min-width: 768px) {
+        opacity: 0;
+        display: none;
+    }
+}
 .pic {
-    width: 70px;
-    height: 70px;
+    //position: absolute;
+    width: 80px;
+    height: 80px;
     @media screen and (min-width: 768px) {
         width: 151px;
         height: 151px;
@@ -116,3 +295,4 @@
     //     }
     // }
 }
+  
