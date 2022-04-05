@@ -36,11 +36,7 @@ $hor: 42px;
             opacity: 0;
             
         }
-        // @media screen and (min-width: 320px) {
-        //     bottom: $hor;
-        //     left: 18px;
-        //     height: 122px;
-        // }
+        
         @media screen and (min-width: 480px) {
             bottom: $hor;
             left: 18px;
