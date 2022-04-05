@@ -24,6 +24,9 @@
 img {
     max-width: 100%;
     height: auto;
+    @include mobile {
+        max-width: 122px;
+    }
     @include tablet {
         max-width: 336px;
     }
