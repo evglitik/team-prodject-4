@@ -1,3 +1,4 @@
+
 .backdrop {
     position: fixed;
     top: 0;
@@ -22,7 +23,7 @@
     padding: 40px;
     top: 50%;
     left: 50%;
-    background-color: #FFB8CA;
+    background-color: $hero-background;
 
     @include mobile {
         width: 320px;
@@ -145,7 +146,6 @@ textarea {
 .form__coment {
     margin-bottom: 20px;
 }
-
 
 .modal-btn {
     display: flex;
