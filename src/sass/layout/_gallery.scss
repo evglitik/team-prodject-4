@@ -103,18 +103,6 @@
         width: 260px;
         height: 260px;
     }
-    // &:hover{
-    //     width: 122px;
-    //     height: 122px;
-    //     @media screen and (min-width: 768px) {
-    //         width: 264px;
-    //         height: 264px;
-    //     }
-    //     @media screen and (min-width: 1280px) {
-    //         width: 415px;
-    //         height: 415px;
-    //     }
-    // }
 }
 
 
@@ -147,10 +135,14 @@
     grid-gap: 12px;
     @include tablet {
         grid-gap: 8px;
-        grid-template-columns: repeat(7, 1fr);
+        grid-template-columns: repeat(6, 1fr);
         grid-template-rows: repeat(9, 1fr);
-        grid-gap: 4px;
     }
+        @include desktop {
+            grid-template-columns: repeat(7, 1fr);
+            grid-template-rows: repeat(9, 1fr);
+            grid-gap: 4px;
+        }
 }
 
 .gread__item {
@@ -168,9 +160,15 @@
     @include tablet {
                 grid-column-start: 2;
                 grid-column-end: 3;
-                grid-row-start: 6;
-                grid-row-end: 9;
+                grid-row-start: 7;
+                grid-row-end: 10;
     }
+        @include desktop {
+            grid-column-start: 2;
+            grid-column-end: 3;
+            grid-row-start: 6;
+            grid-row-end: 9;
+        }
     
 }
 
@@ -180,11 +178,17 @@
     grid-row-start: 8;
     grid-row-end: 10;
     @include tablet {
-        grid-column-start: 2;
-        grid-column-end: 3;
-        grid-row-start: 3;
-        grid-row-end: 6;
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 4;
     }
+        @include desktop {
+            grid-column-start: 2;
+            grid-column-end: 3;
+            grid-row-start: 3;
+            grid-row-end: 6;
+        }
     
 }
 
@@ -194,10 +198,16 @@
     grid-row-start: 2;
     grid-row-end: 3;
     @include tablet {
-                grid-column-start: 1;
-                grid-column-end: 2;
-                grid-row-start: 4;
-                grid-row-end: 7;
+            grid-column-start: 1;
+            grid-column-end: 2;
+            grid-row-start: 4;
+            grid-row-end: 7;
+    }
+    @include desktop {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 4;
+        grid-row-end: 7;
     }
     
 }
@@ -208,6 +218,12 @@
     grid-row-start: 2;
     grid-row-end: 4;
     @include tablet {
+        grid-column-start: 2;
+        grid-column-end: 4;
+        grid-row-start: 1;
+        grid-row-end: 7;
+    }
+    @include desktop {
         grid-column-start: 3;
         grid-column-end: 5;
         grid-row-start: 1;
@@ -222,6 +238,12 @@
     grid-row-start: 3;
     grid-row-end: 4;
     @include tablet {
+        grid-column-start: 5;
+        grid-column-end: 6;
+        grid-row-start: 1;
+        grid-row-end: 4;
+    }
+    @include desktop {
         grid-column-start: 3;
         grid-column-end: 4;
         grid-row-start: 7;
@@ -236,6 +258,12 @@
     grid-row-start: 4;
     grid-row-end: 6;
     @include tablet {
+        grid-column-start: 6;
+        grid-column-end: 7;
+        grid-row-start: 7;
+        grid-row-end: 10;
+    }
+    @include desktop {
         grid-column-start: 5;
         grid-column-end: 6;
         grid-row-start: 3;
@@ -250,6 +278,12 @@
     grid-row-start: 4;
     grid-row-end: 5;
     @include tablet {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 7;
+        grid-row-end: 10;
+    }
+    @include desktop {
         grid-column-start: 5;
         grid-column-end: 6;
         grid-row-start: 6;
@@ -266,6 +300,12 @@
     @include tablet {
         grid-column-start: 6;
         grid-column-end: 7;
+        grid-row-start: 1;
+        grid-row-end: 4;
+    }
+    @include desktop {
+        grid-column-start: 6;
+        grid-column-end: 7;
         grid-row-start: 2;
         grid-row-end: 5;
     }
@@ -277,6 +317,12 @@
     grid-row-start: 6;
     grid-row-end: 8;
     @include tablet {
+        grid-column-start: 4;
+        grid-column-end: 6;
+        grid-row-start: 4;
+        grid-row-end: 10;
+    }
+    @include desktop {
         grid-column-start: 6;
         grid-column-end: 7;
         grid-row-start: 5;
@@ -290,6 +336,12 @@
     grid-row-start: 7;
     grid-row-end: 8;
     @include tablet {
+        grid-column-start: 6;
+        grid-column-end: 7;
+        grid-row-start: 4;
+        grid-row-end: 7;
+    }
+    @include desktop {
         grid-column-start: 7;
         grid-column-end: 8;
         grid-row-start: 4;
