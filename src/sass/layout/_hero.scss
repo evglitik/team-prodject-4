@@ -1,6 +1,7 @@
 .hero{
     background-color:$hero-background ;
     pointer-events: none;
+    overflow: hidden;
     &__section{
         
         position: relative;
