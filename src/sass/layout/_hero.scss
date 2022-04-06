@@ -210,6 +210,7 @@ pointer-events: all;
             left: 184px;
             display: flex;
             align-items: center;
+            
         }
 
         @include desktop {
@@ -224,8 +225,11 @@ pointer-events: all;
             justify-content: center;
         }
 
-        &:hover{
+        &:hover,
+        &:focus{
             cursor: pointer;
+            background-color:#D41443 ;
+
         }
     }
 
@@ -438,5 +442,9 @@ pointer-events: all;
         bottom: 1px;
         width: 8px;
         height: 8px;
+    }
+    .hero__milk-btn:hover &,
+    .hero__milk-btn:focus & {
+        fill: #ffffff;
     }
 }

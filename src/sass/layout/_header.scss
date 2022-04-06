@@ -39,7 +39,7 @@
 
 .header-btn {
     display: none;
-
+cursor: pointer;
     @include tablet {
         display: flex;
         text-align: center;
@@ -111,6 +111,7 @@
 
 
 .menu-open-btn {
+    cursor: pointer;
     padding: 0;
     background-color: transparent;
     border: none;
@@ -139,6 +140,9 @@
     top: 0;
     left: 0;
     overflow: auto;
+    @include desktop{
+        display: none;
+    }
 }
 
 .is-hidden {
@@ -148,9 +152,12 @@
 }
 
 .menu-close-btn {
+position: absolute;
+top: 20px;
+right: 20px;
+    cursor: pointer;
     display: flex;
-    margin-top: 20px;
-    margin-left: auto;
+
     fill: $header-menu-text;
     padding: 0;
     background-color: transparent;
@@ -162,16 +169,26 @@
         display: none;
     }
 }
+.container-mob{
+    position: relative;
+    padding-left: 20px;
+    padding-right: 20px;
+    display: flex;
+    margin-left: auto;
 
+}
 .mob-menu-btn {
-    margin-top: 60px;
+    position: absolute;
+    top: 60px;
+    cursor: pointer;
+left: 50%;
+margin-left: -105px;
     display: flex;
     text-align: center;
     justify-content: center;
     align-items: center;
-    margin-left: auto;
-    margin-right: auto;
-    width: 209px;
+    
+    width: 210px;
     height: 44px;
     border-radius: 22px;
     color: $header-btn-text;
@@ -180,7 +197,9 @@
     font-size: 16px;
     line-height: 1.31;
     border: none;
-    margin-bottom: 32px;
+    @include tablet{
+    width: 186px;
+    }
 }
 
 .mob-menu-btn:hover,
@@ -203,7 +222,9 @@
     }
 }
 
-
+.mob-menu__list{
+    padding-top: 135px;
+}
 .mob-menu__item {
     &:not(:last-child) {
         margin-bottom: 23px;
