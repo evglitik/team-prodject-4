@@ -2,6 +2,8 @@
     background-color: $hero-background;
     display: flex;
     width: 100%;
+    position: absolute;
+    
 
 }
 
@@ -79,6 +81,7 @@
     @include desktop {
         display: flex;
         margin-left: 175px;
+        z-index: 2;
     }
 }
 
