@@ -1,26 +1,17 @@
 .about {
     background-color: $advantages-background;
     padding-bottom: 40px;
-    @include tablet{
-        padding-bottom: 80px;
-    }
-    @include desktop {
-        padding-bottom: 100px;
-    }
-}
-
-.about__container {
     background-image: linear-gradient(rgba(255, 245, 246, 10%),rgba(255, 245, 246, 10%)), url(/images/bg-milk.png);
     background-repeat: no-repeat;
     background-size: contain;
     background-position-y: 595px;
-
-    
-
     @include tablet{
+        padding-bottom: 80px;
         background-image: none;
+
     }
     @include desktop {
+        padding-bottom: 100px;
         background-image: linear-gradient(rgba(255, 245, 246, 10%),rgba(255, 245, 246, 10%)), url(/images/bg-milk.png);
         background-repeat: no-repeat;
         background-size: initial;
@@ -28,9 +19,12 @@
     }
 }
 
+
+
 img {
     max-width: 100%;
     height: auto;
+
     @include tablet {
         max-width: 336px;
     }
@@ -55,6 +49,7 @@ img {
     @include tablet {
         font-size: 26px;
         line-height: 1.15;
+        padding-top: 20px;
     }
     @include desktop {
         font-size: 30px ;
@@ -96,7 +91,7 @@ img {
     font-size: 12px;
     line-height: 162%;;
     letter-spacing: 0.04em;
-    color: #000000;
+    color: $text-darck;
     margin-bottom: 40px;
     margin-top: 40px;
         @include tablet{
@@ -214,3 +209,124 @@ img {
     margin-left: 13px;
     
 }
+
+.backdrop {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.257);
+    position: fixed;
+    top: 0;
+    transition: opacity 100ms, visibility 300ms;
+    z-index: 2;
+}
+
+.backdrop.is-hidden .modal {
+    transform: rotateX(180deg) scale(3);
+    
+}
+
+.modal {
+    width: 100%;
+    min-height: 500px;
+    background-color: $about-background;
+    border-radius: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: transform 600ms;
+    padding: 20px;
+    
+    @include tablet{
+        width: 450px;
+        padding: 60px;
+    
+    } 
+    @include desktop {
+        width: 480px;
+        top: 50%;
+        left: 67%;
+        padding: 60px;
+        
+    }
+   
+}
+
+.modal-close-btn {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    border: transparent;
+    background-color: transparent;
+    fill: #907E82;
+    cursor: pointer;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus  {
+        fill: $acent-color;
+}
+
+    @include tablet {
+        width: 30px;
+        height: 30px;
+        top: 25px;
+        right: 25px;
+        }
+    
+    @include desktop {
+        width: 30px;
+        height: 30px;
+        top: 25px;
+        right: 25px;
+    }
+}
+
+
+.modal-close-icon {
+    height: 100%;
+    width: 100%;
+}
+
+.is-hidden {
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+}
+
+.modal-title {
+    font-family: 'Titan One';
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    color:  $text-pre-title;
+    margin-bottom: 20px;
+    }
+
+    .modal-text {
+        font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 176%;
+    letter-spacing: 0.04em;
+    color:  $text-darck;
+    text-align: justify;
+    @include desktop {
+        font-size: 17px;  
+    }
+    }
+
+ 
+
+
+
+
+
+
+
+

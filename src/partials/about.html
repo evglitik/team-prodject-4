@@ -1,21 +1,51 @@
- <!-- about section -->
- <section class="about section">
-    <div class="container about__container">
-        <span class="about__pre-title">tradition and love</span>
-        <h2 class="about__title">how it’s made?</h2>
-            <div class="about-main">
-                <img src="images/cow.png" alt="коровка">  
-                    <div class="about__main-text">  
-                        <p class="about__pre-text">We’ve been making irresistible, award-winning ice cream for over 60 years, so we think we’re pretty good at it. But you should try for yourself — tasting is believing!</p>
-                        <p class="about__text">We make the ice cream mix from scratch using our in house developed recipes on the first day. Most flavours are from the classic mix with additions such as vanilla beans, fresh or roasted fruits, spices, burnt sugar caramels, or whatever flavour of the week we're feeling. </p>
-                         <p class="about__last-text">Let the ice creams freeze overnight to reduce ice crystals and make for a super smooth scoop.</p> 
-                            <button type="submit" class="about-btn"
-                             >Read more<svg class= "about-btn-icon" width="7" height="9">
-                                <use href="/images/icons.svg#icon-arrow-right-short"></use>
-                            </svg></button>
-                    </div>
-            </div>            
-    </div>    
-    <!-- modalka -->
- 
+<!-- about section -->
+<section class="about section">
+  <a name="about-section"></a>
+  <div class="container about__container">
+    <span class="about__pre-title">tradition and love</span>
+    <h2 class="about__title">how it’s made?</h2>
+    <div class="about-main">
+      <img src="images/cow.png" alt="коровка" />
+      <div class="about__main-text">
+        <p class="about__pre-text">
+          We’ve been making irresistible, award-winning ice cream for over 60 years, so we think
+          we’re pretty good at it. But you should try for yourself — tasting is believing!
+        </p>
+        <p class="about__text">
+          We make the ice cream mix from scratch using our in house developed recipes on the first
+          day. Most flavours are from the classic mix with additions such as vanilla beans, fresh or
+          roasted fruits, spices, burnt sugar caramels, or whatever flavour of the week we're
+          feeling.
+        </p>
+        <p class="about__last-text">
+          Let the ice creams freeze overnight to reduce ice crystals and make for a super smooth
+          scoop.
+        </p>
+        <button type="submit" class="about-btn" modal-open-btn>
+          Read more<svg class="about-btn-icon" width="7" height="9">
+            <use href="/images/icons.svg#icon-arrow-right-short"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+  <!-- modalka -->
+  <div class="backdrop is-hidden" modal-about>
+    <div class="modal">
+      <button class="modal-close-btn" type="button" modal-close-btn>
+        <svg class="modal-close-icon" width="14" height="14">
+          <use href="./images/icons.svg#icon-close"></use>
+        </svg>
+      </button>
+      <p class="modal-title">We work for you</p>
+      <p class="modal-text">
+        We believe that luxury is found wherever you are – in moments large and small. Here’s to
+        choosing deliciousness every single time. Our mission is simple: Make really good ice cream
+        using really good ingredients. We take pride in taking the extra time to find farmers, learn
+        about their products and business, and buy real ingredients. What goes into our ice creams
+        and treats will always be the freshest, highest quality we can find and offers the bonus of
+        supporting local farmers.
+      </p>
+    </div>
+  </div>
 </section>
