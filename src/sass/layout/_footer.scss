@@ -1,3 +1,152 @@
 .footer {
-    background-color: #FFF5F6;
+    background-color: $advantages-background;
+   
+}
+
+.footer_container {
+     @include tablet {
+    display: flex;
+    justify-content: space-between;
+    }
+
+}
+
+.footer_title {
+    margin-bottom: 40px;
+    @include desktop {
+        margin-bottom: 60px;
+    }    
+}
+
+.footer_title-one {
+    width: 232px;
+    font-family: 'Titan One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.16;
+    text-transform: uppercase;
+    color: $text-pre-title;
+    margin-bottom: 16px;
+    @include tablet {
+        width: 340px;
+        font-size: 26px;
+        line-height: 1.15;
+        letter-spacing: 0.04em;
+    }
+    @include desktop {
+        width: 472px;
+        font-size: 30px;
+        line-height: 1.13;
+    }
+}
+
+.footer_title-too {
+    width: 200px;
+    font-family: 'Titan One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 34px;
+    line-height: 1.14;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: $header-btn-text;
+
+    @include tablet {
+        font-size: 48px;
+        letter-spacing: 0.06em;
+    }
+    @include desktop {
+        width: 477px;
+        font-size: 58px;
+    }
+}
+
+
+.net_list {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.net_social-link {
+    fill: #FEA5BB;
+    &:hover {
+        fill: $header-menu-text-hover;
+    }
+}
+
+.net_item + .net_item {
+    margin-left: 28.24px;
+}
+
+.net_list {
+    margin-bottom: 40px;
+}
+
+.footer_tel-title {
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 1.86; /* identical to box height, or 30px */
+    color: #000000;
+    @include tablet {
+        font-size: 14px;
+    
+    }
+    @include desktop {
+        font-size: 16px;
+        letter-spacing: 0.02em;
+    }
+}
+
+.footer_tel-namber {
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 1.86; /* identical to box height, or 30px */
+    color: $acent-color;
+
+    @include tablet {
+        font-size: 14px;
+    }
+
+    @include desktop {
+        font-size: 16px;
+        letter-spacing: 0.02em;
+    }
+}
+
+.footer_tel {
+    margin-bottom: 40px;
+    text-align: right;
+}
+
+.ice_corp {
+    border-top: 1px solid #E1E1E1;
+}
+
+.ice_corp-list {
+    padding-top: 16px;
+    padding-bottom: 20px;
+    @include tablet {
+    padding-top: 8px;
+    padding-bottom: 8px;
+    }
+}
+
+.ice_corp-title {
+    max-width: 140px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.52; /* or 21px */
+    color: #907E82;
+    @include tablet {
+        max-width: 276px;
+    }
 }
