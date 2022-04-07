@@ -4,6 +4,10 @@
 }
 
 .footer_container {
+    margin-bottom: 40px;
+    @include desktop {
+        margin-bottom: 60px;
+    }    
      @include tablet {
     display: flex;
     justify-content: space-between;
@@ -22,12 +26,15 @@
     color: $text-pre-title;
     margin-bottom: 16px;
     @include tablet {
+        width: 340px;
         font-size: 26px;
         line-height: 1.15;
+        letter-spacing: 0.04em;
     }
     @include desktop {
         width: 472px;
         font-size: 30px;
+        line-height: 1.13;
     }
 }
 
@@ -41,12 +48,13 @@
     letter-spacing: 0.04em;
     text-transform: uppercase;
     color: $header-btn-text;
-    margin-bottom: 40px;
+
     @include tablet {
         font-size: 48px;
+        letter-spacing: 0.06em;
     }
     @include desktop {
-        width: 474px;
+        width: 477px;
         font-size: 58px;
     }
 }
@@ -59,8 +67,7 @@
 
 .net_social-link {
     fill: #FEA5BB;
-    &:hover,
-    &:focus {
+    &:hover {
         fill: $header-menu-text-hover;
     }
 }
@@ -70,6 +77,9 @@
 }
 
 .net_list {
+    @media screen and (max-width: 768px) {
+        margin-top: 40px;
+    }
     margin-bottom: 40px;
 }
 
@@ -79,13 +89,14 @@
     font-weight: 700;
     font-size: 12px;
     line-height: 1.86; /* identical to box height, or 30px */
-    letter-spacing: 0.02em;
     color: #000000;
     @include tablet {
         font-size: 14px;
+    
     }
     @include desktop {
         font-size: 16px;
+        letter-spacing: 0.02em;
     }
 }
 
@@ -95,46 +106,43 @@
     font-weight: 700;
     font-size: 12px;
     line-height: 1.86; /* identical to box height, or 30px */
-    letter-spacing: 0.02em;
     color: $acent-color;
+
     @include tablet {
         font-size: 14px;
     }
+
     @include desktop {
         font-size: 16px;
+        letter-spacing: 0.02em;
     }
 }
 
 .footer_tel {
-    margin-bottom: 40px;
     text-align: right;
 }
 
 .ice_corp {
-    height: 78px;
     border-top: 1px solid #E1E1E1;
-    margin-bottom: 20px;
+    padding-top: 16px;
+    padding-bottom: 20px;
     @include tablet {
-        height: 40px;
-        margin-bottom: 4px;
-    }
-}
-
-.ice_corp-list {
-    margin-top: 16px;
-    @include tablet {
-    display: flex;
-    justify-content: center;
-    margin-top: 8px;
+    padding-top: 8px;
+    padding-bottom: 8px;
     }
 }
 
 .ice_corp-title {
+    max-width: 140px;
+    margin-left: auto;
+    margin-right: auto;
     font-family: 'DM Sans';
     font-style: normal;
     font-weight: 700;
     font-size: 14px;
     line-height: 1.52; /* or 21px */
-    text-align: center;
     color: #907E82;
+    @include tablet {
+        max-width: 276px;
+    }
 }

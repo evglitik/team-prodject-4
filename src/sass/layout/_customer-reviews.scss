@@ -191,6 +191,14 @@
     }
 }
 
+.slick-prev {
+    left: 0;
+}
+
+.slick-next {
+    right: 0;
+}
+
 .slaider .slaider-dots li.slick-active #slick-slide-control00::after {
     background: url(../images/slaider-home-acktive.png);
 }
