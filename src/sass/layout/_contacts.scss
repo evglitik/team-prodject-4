@@ -460,6 +460,7 @@
 }
 
 .contacts-modal-franchise__close-btn {
+    color: rgba(0, 0, 0, 0.507);
     position: relative;
     z-index: 1;
     width: 40px;
@@ -485,6 +486,7 @@
 
         &:hover,
         &:focus {
+            color: #000;
             background-color: #ececec;
         }
     }
@@ -555,4 +557,5 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    fill: currentColor;
 }
