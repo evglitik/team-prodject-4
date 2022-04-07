@@ -5,7 +5,7 @@
     &__section{
         
         position: relative;
-        padding: 194px 20px 158px;
+        // padding: 194px 20px 158px;
         width: 300px;
         height: 502px;
         @include mobile {
@@ -13,11 +13,11 @@
             height: 502px;
         }
         @include tablet {
-            width: 768px;
+            width: 100%;
             height: 416px;
         }
         @include desktop {
-            width: 1280px;
+            width: 100%;
             height: 664px;
         }
     }
@@ -29,14 +29,15 @@
         font-family: 'Titan One';
         font-style: normal;
         font-weight: 400;
-        left: 5px;
+        left: 0px;
+        top: 194px;
         @include tablet {
             top: 102px;
-            left: 16px;
+            
         }
         @include desktop {
             top: 147px;
-            left: 16px;
+            // left: 16px;
         }
     }
     &__text-up{
@@ -148,7 +149,7 @@
             width: 152px;
             height: 154px;
             top: 246px;
-            left: 32px;
+            left: 0px;
             background-image: url(/images/hero/tabl/pic3.png);
             @include retin {
                 background-image: url(/images/hero/tabl/pic@3.png); 
@@ -159,7 +160,7 @@
             width: 213px;
             height: 216px;
             top: 388px;
-            left: 32px;
+            // left: 32px;
             background-image: url(/images/hero/desk/pic3.png);
             @include retin {
                 background-image: url(/images/hero/desk/pic@3.png); 
@@ -240,7 +241,7 @@ pointer-events: all;
             width: 190px;
             height: 150px;
             top: 265px;
-            left: 546px;
+            right: 0px;
             background-image: url(/images/hero/tabl/pic2.png);
             @include retin {
                 background-image: url(/images/hero/tabl/pic@2.png); 
@@ -251,7 +252,7 @@ pointer-events: all;
             width: 304px;
             height: 241px;
             top: 424px;
-            left: 960px;
+            right: 0px;
             background-image: url(/images/hero/desk/pic2.png);
             @include retin {
                 background-image: url(/images/hero/desk/pic@2.png); 
@@ -263,19 +264,21 @@ pointer-events: all;
         position: absolute;
         opacity: 0;
         border-radius: 50%;
+        right: 0px;
         background-color: #ffffff;
         @include tablet {
             opacity: 1;
             width: 16px;
             height: 16px;
-            left: 720px;
+            // left: 720px;
         }
 
         @include desktop {
             opacity: 1;
             width: 30px;
             height: 30px;
-            left: 1234px;
+            // left: 1234px;
+            // right: 20px;
         }
     }
 
@@ -310,13 +313,13 @@ pointer-events: all;
         @include tablet {
             opacity: 1;
             font-size: 28px;
-            left: 693px;
+            right: 10px;
         }
 
         @include desktop {
             opacity: 1;
             font-size: 46px;
-            left: 1192px;
+            right: 20px;
             
         }
 
@@ -327,7 +330,7 @@ pointer-events: all;
         }
 
         @include desktop {
-            top: 153px;
+            top: 157px;
         }
     }
 
@@ -337,7 +340,7 @@ pointer-events: all;
         }
 
         @include desktop {
-            top: 245px;
+            top: 248px;
         }
     }
     &__txt-cafes, &__txt-food{
@@ -347,7 +350,7 @@ pointer-events: all;
         font-family: "DM sans";
 
         
-        right: 42px;
+        right: 10px;
         @include tablet {
             opacity: 1;
             font-size: 8px;
