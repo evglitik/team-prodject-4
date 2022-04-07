@@ -14,16 +14,33 @@
         justify-content: center;
         margin-right: auto;
         margin-left: auto;
+        cursor: pointer;
         border: transparent;
         transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1) , background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
             &:hover,
             &:focus {
                 background-color: $text-light;
-            
         
     }
 }
-
+.products-ice .products-list__btn {
+    &:hover,
+    &:focus {
+        background-color: #FFB8CA;
+    }
+}
+.products-coffee .products-list__btn {
+    &:hover,
+    &:focus {
+        background-color: #f0d1a5;
+    }
+}
+.products-milkshake .products-list__btn {
+    &:hover,
+    &:focus {
+        background-color: #C2E297;
+   }
+}
 .section-products {
     padding-top: 80px;
     padding-bottom: 40px;
@@ -157,8 +174,16 @@
             transform: translate(0, -65%);
         }
     }
-}
 
+&__item:not(:last-child) {
+    @include tablet {
+    margin-left: 16px;
+    }
+    @include desktop {
+     margin-left: 32px;
+    }
+}
+}
 .products-ice {
     background: $products-icecream-background;
     border-radius: 24px;
