@@ -1,6 +1,6 @@
 $('.slaider').slick({
-    autoplay: false,
-    autoplaySpeed: 3000,
+    autoplay: true,
+    autoplaySpeed: 3500,
     dots: true,
     dotsClass: "slaider-dots",
 });
