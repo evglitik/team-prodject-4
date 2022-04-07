@@ -1,11 +1,19 @@
 .contacts-section {
     background-image: linear-gradient(
         to bottom,
-        #fff 25%,
-        #FFF5F6 25%,
-        #FFF5F6 75%,
+        $text-light 25%,
+        $contacts-background 25%,
+        $contacts-background 75%,
         );
-        padding: 40px 0;
+        padding-bottom: 45px;
+
+        @include tablet {
+            padding-bottom: 40px;
+        }
+        
+        @include desktop {
+            padding-bottom: 120px;
+        }
 }
 
 .contacts-list {
@@ -16,10 +24,24 @@
 }
 
 .contacts-list__item {
+    position: relative;
     padding: 40px 32px;
-    background-color: #fff;
+    background-color: $text-light;
     box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
     border-radius: 24px;
+    cursor: pointer;
+    perspective: 1000px;
+
+    &:hover {
+        .contacts-list__overlay {
+        transform: rotateY(360deg);
+
+        }
+        .contacts-list__content {
+            transform: rotateY(180deg);
+            -webkit-backface-visibility: hidden;
+        }
+    }
 
     &:not(:last-child) {
         margin-bottom: 20px;
@@ -39,6 +61,40 @@
     }
 }
 
+.contacts-list__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    padding: 40px 32px;
+    border-radius: 24px;
+    transition: 0.5s;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    transform: rotateY(180deg);
+    transition-delay: 250ms;
+}
+
+.contacts-list__map {
+    border-radius: 4px;
+    width: 100%;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
+    0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+    box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+}
+
+.contacts-list__content {
+    transition: 0.5s;
+    backface-visibility: hidden;
+        -webkit-backface-visibility: hidden;
+    transition-delay: 250ms;
+}
+
 .contacts-list__category {
     display: flex;
     align-items: center;
@@ -48,7 +104,7 @@
     font-size: 12px;
     line-height: calc(22/12);
     letter-spacing: 0.04em;
-    color: #fff;
+    color: $text-light;
     border-radius: 4px;
     text-transform: uppercase;
     height: 16px;
@@ -61,7 +117,7 @@
 
     &.cafe {
         width: 80px;
-        background-color: #F0D1A5;
+        background-color: $products-icecoffe-background;
         @include tablet {
             width: 75px;
             height: 30px;
@@ -69,7 +125,7 @@
     }
     &.foodtrack {
         width: 130px;
-        background-color: #C2E297;
+        background-color: $products-milkshakes-background;
         @include tablet {
             width: 140px;
             height: 30px;
@@ -102,7 +158,7 @@
     font-weight: 500;
     font-size: 12px;
     line-height: calc(18/12);
-    color: #907E82;
+    color: $contacts-text-color;
 
     @include tablet {
         font-size: 14px;
@@ -163,7 +219,7 @@
     font-weight: 500;
     font-size: 12px;
     line-height: calc(22/12);
-    color: #FFA5BA;
+    color: $text-pre-title;
 
     @include tablet {
         font-size: 14px;
@@ -183,7 +239,7 @@
     font-weight: 500;
     font-size: 12px;
     line-height: calc(18/12);
-    color: #907E82;
+    color: $contacts-text-color;
 
     @include tablet {
         margin-top: 60px;
@@ -196,6 +252,12 @@
         flex-direction: column;
         font-size: 16px;
         line-height: calc(30/16);
+    }
+
+    &>a {
+        &:hover {
+            color: $text-pre-title;
+        }
     }
 
     &::before {
@@ -214,10 +276,15 @@
 }
 
 .contacts-button-wrap {
+    
     @include tablet {
         display: flex;
         justify-content: center;
         margin-top: 40px;
+    }
+
+    @include desktop {
+        margin-top: 60px;
     }
 }
 
@@ -234,9 +301,9 @@
     font-weight: 700;
     font-size: 16px;
     line-height: calc(21/16);
-    color: #fff;
-    fill: #fff;
-    stroke: #fff;
+    color: $text-light;
+    fill: $text-light;
+    stroke: $text-light;
 
     &>svg {
         margin-left: 6px;
@@ -254,11 +321,11 @@
     
 }
 
-.contacts-button--color {
-    background: #fff;
-    color: #D41443;
-    fill: #D41443;
-    stroke: #D41443;
+.button-franchise {
+    background: $text-light;
+    color: $acent-color;
+    fill: $acent-color;
+    stroke: $acent-color;
     justify-content: center;
     margin-top: 10px;
 
@@ -269,7 +336,7 @@
 
     @include desktop {
         &:hover {
-            background: #ECEBEB;
+            background: $header-hover-btn;
         }
     }
 
@@ -280,4 +347,215 @@
 
 .contact-button__icon {
     color: currentColor;
+}
+
+#map {
+    width: 100%;
+    height: 500px;
+}
+
+.map-title {
+    color: $acent-color;
+    font-family: "Titan One";
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+
+}
+
+.map-link {
+    color: $contacts-text-color;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: calc(28/16);
+    text-align: center;
+    letter-spacing: 0.04em;
+
+    &:hover, :focus {
+        color: $text-pre-title;
+    }
+}
+
+.contacts-backdrop-map {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.2);
+    z-index: 3;
+}
+
+.contacts-modal-map {
+    position: absolute;
+    padding: 10px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: calc(100vw - 30px);
+    max-width: 1279px;
+    background-color: $text-light;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+        0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+
+    @include desktop {
+        max-width: 1259px;
+    }
+}
+
+.contacts-modal-map__close-btn {
+    position: relative;
+    z-index: 1;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    background-color: $text-light;
+    padding: 0;
+    cursor: pointer;
+    border: transparent;
+    border-radius: 2px;
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    stroke: #000;
+
+    &:active {
+        background-color: #ececec;
+    }
+    @include desktop {
+    
+        &:hover,
+        &:focus {
+            background-color: #ececec;
+        }
+    }
+}
+
+.contacts-backdrop-franchise {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.2);
+    z-index: 3;
+}
+
+.contacts-modal-franchise {
+    position: absolute;
+    padding: 50px 30px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: calc(100vw - 30px);
+    max-width: 1279px;
+    background-color: $contacts-background;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+        0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    max-width: 600px;
+    
+}
+
+.contacts-modal-franchise__close-btn {
+    color: rgba(0, 0, 0, 0.507);
+    position: relative;
+    z-index: 1;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    background-color: $text-light;
+    padding: 0;
+    cursor: pointer;
+    border: transparent;
+    border-radius: 2px;
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    stroke: #000;
+
+    &:active {
+        background-color: #ececec;
+    }
+
+    @include desktop {
+
+        &:hover,
+        &:focus {
+            color: #000;
+            background-color: #ececec;
+        }
+    }
+}
+
+.form-application__title {
+    font-family: 'Titan One';
+    text-align: center;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: calc(21/18);
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: $text-pre-title;
+}
+
+.form-application__label {
+    display: block;
+    margin-bottom: 4px;
+    font-size: 12px;
+    line-height: calc(14 / 12);
+    letter-spacing: 0.01em;
+}
+
+.form-application__input {
+    display: block;
+    width: 100%;
+    height: 40px;
+    padding: 12px 42px;
+    outline: none;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    cursor: pointer;
+    transition-property: border-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:focus {
+        border-color: $acent-color;
+            &~.form-application__input-icon {
+                fill: $acent-color;
+            }
+    }
+}
+
+.form-application__input-icon {
+    position: absolute;
+    top: 11px;
+    left: 12px;
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form-application__input-wrap {
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.submit-button {
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.modal__close-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    fill: currentColor;
 }

@@ -5,17 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>IceCream</title>
     <link rel="shortcut icon" type="image/png" href="images/favicon.png" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Titan+One&display=swap"
-      rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Titan+One&display=swap"
+      rel="stylesheet"
+    />
     <!-- таблица стилей слайдера -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
-        integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
-        integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+      integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+      integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 
     <link
       rel="stylesheet"
@@ -26,6 +36,7 @@
   </head>
   <body>
     <!-- Так добавляются фрагменты в главные HTML-файлы страниц. -->
+    <include src="./partials/contacts-modal.html"></include>
     <include src="./partials/header.html"></include>
     <include src="./partials/hero.html"></include>
     <include src="./partials/products.html"></include>
@@ -38,11 +49,25 @@
 
     <!-- Скрипт идёт последним в разметке. В нём уже подключен главный SASS-файл. -->
     <script src="./index.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" referrerpolicy="no-referrer"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+    <script src="./js/menu.js"></script>
+    <script src="./js/modal.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
       integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
-      crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+      crossorigin="anonymous" referrerpolicy="no-referrer">
+    </script>
       <script src="./js/modal-cow.js"></script> 
+      <script src="./js/modal-cow.js"></script> 
+
     <script src="./js/slieder.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDVH_A-XgM-zKBUWwFsrP-dnZRieliyYJ0&callback=initMap&v=weekly"async>
+    </script>
+    <script>function initMap(){var a=document.getElementById("map"),n=new google.maps.Map(a,{zoom:14,center:{lat:41.917421899082626,lng:-87.68768263053963},fullscreenControl:!1,mapId:"50ab424a52feb712"});function o(a){var o=new google.maps.Marker({position:a.coordinates,map:n,animation:google.maps.Animation.BOUNCE,icon:a.image});if(a.info){var e=new google.maps.InfoWindow({content:a.info});o.addListener("click",function(){e.open(n,o),o.setAnimation(null)}),google.maps.event.addListener(e,"closeclick",function(){o.setAnimation(google.maps.Animation.BOUNCE)})}}o({coordinates:{lat:41.924346298373685,lng:-87.69725100803126},image:"https://i.ibb.co/xYKPvxq/Icecream-icon-2.png",info:'<h1 class="map-title">Pretty Cool Ice Cream</h1><a href="https://goo.gl/maps/Cs9yw4zVjVZB75pAA" target=»_blank class="map-link">2353 N California Ave, Chicago, IL 60647</a>'}),o({coordinates:{lat:41.917421899082626,lng:-87.68768263053963},image:"https://i.ibb.co/xYKPvxq/Icecream-icon-2.png",info:'<h1 class="map-title">Baskin-Robbins</h1><a href="https://goo.gl/maps/ZzJArB9DMujcuisT9" target=»_blank class="map-link">2247 N Milwaukee Ave, Chicago, IL 60647</a>'}),o({coordinates:{lat:41.908882700937205,lng:-87.67490051109861},image:"https://i.ibb.co/xYKPvxq/Icecream-icon-2.png",info:'<h1 class="map-title">Margies Candies</h1><a href="https://goo.gl/maps/RLy5cxaxVnD3iBpX8" target=»_blank class="map-link">1960 N Western Ave, Chicago, IL 60647</a>'})}
+    </script>
+    <script src="./js/contacts-modal.js"></script>
   </body>
 </html>

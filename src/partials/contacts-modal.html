@@ -1,0 +1,83 @@
+<div class="contacts-backdrop-map fulse-title" >
+  <div class="contacts-modal-map">
+    <button type="button" class="contacts-modal-map__close-btn">
+          <svg class="modal__close-icon" width="18px" height="18px">
+            <use href="images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+    <div id="map"></div>
+  </div>
+</div>
+
+<div class="contacts-backdrop-franchise fulse-title" >
+  <div class="contacts-modal-franchise">
+      <button type="button" class="contacts-modal-franchise__close-btn">
+          <svg class="modal__close-icon" width="18px" height="18px">
+            <use href="images/icons.svg#icon-close"></use>
+          </svg>
+      </button>
+      <form class="form-application">
+          <h3 class="form-application__title">please fill in below form and we will contact you shortly</h3>
+          <label for="name" class="form-application__label">Name</label>
+          <div class="form-application__input-wrap">
+            <input type="text" id="name" name="name" class="form-application__input" />
+            <svg width="18px" height="18px" class="form-application__input-icon">
+              <use href="./images/icons.svg#icon-name"></use>
+            </svg>
+          </div>
+          <label for="tel" class="form-application__label">Phone Number</label>
+          <div class="form-application__input-wrap">
+            <input type="tel" id="tel" name="tel" class="form-application__input" />
+            <svg width="18px" height="18px" class="form-application__input-icon">
+              <use href="./images/icons.svg#icon-tel"></use>
+            </svg>
+          </div>
+          <label for="email" class="form-application__label">E-mail</label>
+          <div class="form-application__input-wrap">
+            <input type="email" id="email" name="email" class="form-application__input" />
+            <svg width="18px" height="18px" class="form-application__input-icon">
+              <use href="./images/icons.svg#icon-mail"></use>
+            </svg>
+          </div>
+          <button type="submit" class="contacts-button submit-button">SEND</button>
+        </form>
+    </div>
+  </div>
+
+  <div class="backdrop-header fulse-title header__beackdrop-modal">
+    <div class="container">
+      <div class="modal-header">
+        <form class="form">
+          <p class="form__title">HI! Your order:</p>
+          <div class="form__field">
+            <label for="name" class="form__label">Name</label>
+            <div class="input">
+              <input type="text" class="input__area" name="user-name" id="name" autofocus />
+            </div>
+          </div>
+          <div class="form__field">
+            <label for="tel" class="form__label">Phone</label>
+            <div class="input">
+              <input type="tel" name="tel" id="tel" class="input__area" />
+            </div>
+          </div>
+          <div class="form__field">
+            <label for="email" class="form__label">E-mail</label>
+            <div class="input">
+              <input type="email" class="input__area" name="mail" id="email" />
+            </div>
+          </div>
+          <div class="form__field form__coment">
+            <label for="coment" class="form__label">Order:</label>
+            <textarea class="coment" name="coment" id="coment" placeholder="Введите текст"></textarea>
+          </div>
+          <button type="submit" class="button modal-btn">Send</button>
+          <button type="button" class="header-btn__off-modal">
+            <svg class="modal__close-icon" width="18px" height="18px">
+              <use href="images/icons.svg#icon-close"></use>
+            </svg>
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
