@@ -4,18 +4,15 @@
 }
 
 .footer_container {
+    margin-bottom: 40px;
+    @include desktop {
+        margin-bottom: 60px;
+    }    
      @include tablet {
     display: flex;
     justify-content: space-between;
     }
 
-}
-
-.footer_title {
-    margin-bottom: 40px;
-    @include desktop {
-        margin-bottom: 60px;
-    }    
 }
 
 .footer_title-one {
@@ -80,6 +77,9 @@
 }
 
 .net_list {
+    @media screen and (max-width: 768px) {
+        margin-top: 40px;
+    }
     margin-bottom: 40px;
 }
 
@@ -119,15 +119,11 @@
 }
 
 .footer_tel {
-    margin-bottom: 40px;
     text-align: right;
 }
 
 .ice_corp {
     border-top: 1px solid #E1E1E1;
-}
-
-.ice_corp-list {
     padding-top: 16px;
     padding-bottom: 20px;
     @include tablet {
