@@ -26,19 +26,19 @@
 .products-ice .products-list__btn {
     &:hover,
     &:focus {
-        background-color: #FFB8CA;
+        background-color: $products-icecream-background;
     }
 }
 .products-coffee .products-list__btn {
     &:hover,
     &:focus {
-        background-color: #f0d1a5;
+        background-color: $products-icecoffe-background;
     }
 }
 .products-milkshake .products-list__btn {
     &:hover,
     &:focus {
-        background-color: #C2E297;
+        background-color: $products-milkshakes-background;
    }
 }
 .section-products {
