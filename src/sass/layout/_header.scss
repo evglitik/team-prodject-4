@@ -38,6 +38,7 @@
 
 .header-btn {
     display: none;
+    background-color:$header-menu-text ;
 cursor: pointer;
     @include tablet {
         display: flex;
@@ -65,8 +66,8 @@ cursor: pointer;
 
 .header-btn:hover,
 .header-btn:focus {
-    color: $header-hover-btn;
-    background-color: $header-menu-text-hover;
+    // color: $header-hover-btn;
+    background-color: #ECEBEB;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -216,7 +217,9 @@ margin-left: -105px;
     fill: $header-btn-text;
 
     .header-btn:hover &,
-    .header-btn:focus &,
+    .header-btn:focus & {
+        fill: $header-menu-text-hover;
+    }
     .mob-menu-btn:hover &,
     .mob-menu-btn:focus & {
         fill: $header-hover-btn;
