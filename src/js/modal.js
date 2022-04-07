@@ -14,7 +14,6 @@
 //     refs.modal.classList.toggle("is-hidden");
 //   }
 // })();
-
 (() => {
   const refs = {
     openModalBtn: document.querySelector(".header-btn__on-modal"),
