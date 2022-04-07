@@ -138,6 +138,10 @@
     padding-bottom: 112px;
     position: relative;
 
+        &:not(:first-child) {
+            margin-top: 140px;
+        }
+
     &::before {
         content: '';
         background-size: contain;
@@ -148,17 +152,13 @@
         transform: translate(0, -50%);
     }
 
-    @media screen and (max-width: 767px) {
-        &:not(:first-child) {
-            margin-top: 140px;
-        }
-    }
-
     @include tablet {
         width: 224px;
         padding-top: 118px;
         margin-left: 16px;
-
+                &:not(:first-child) {
+                    margin-top: 0;
+                }
         &::before {
             transform: translate(0, -60%);
         }
